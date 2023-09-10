@@ -12,7 +12,7 @@
 <div id="heading" style="display: block;"><h1>Automating Investigations of Reproducibility</h1></div>
 
 <form id="uploadForm" action="http://127.0.0.1:8000/" method="post" enctype="multipart/form-data" style="display: block;">
-    <input type="hidden" name="csrfmiddlewaretoken" value="jcgmKZraa9ZMxyM2VgZXjbc1BncwgVcBRndO5ewMXUhyweVdcuZ3eBfRms5b3aNa">
+    <input type="hidden" name="csrfmiddlewaretoken" value="0T4BG88lsIJahJA2zsWIXDXYKTlSmc9Uy4131ndXft1WgpJdQGWOS30OvYex9rKt">
     <div class="file-upload">
         <label for="fileInput" class="button">Select Files
             <input type="file" id="fileInput" name="file[]" multiple="">
@@ -35,9 +35,32 @@
 
 <div id="resultsContainer" class="container" style="display: block;">
 
+    <!-- Add a dropdown menu to select a serial number -->
+    <label for="serialNumberDropdown"><b>Select Serial Number:</b></label>
+    <select id="serialNumberDropdown" onchange="updateTable(&#39;file-info-table&#39;); updateTable(&#39;link-info-table&#39;); updateTable(&#39;download-info-table&#39;); toggleTables();">
+        <option value="All">All</option>
+        
+            <option value="1">1</option>
+        
+            <option value="2">2</option>
+        
+            <option value="3">3</option>
+        
+            <option value="4">4</option>
+        
+            <option value="5">5</option>
+        
+            <option value="6">6</option>
+        
+            <option value="7">7</option>
+        
+            <option value="8">8</option>
+        
+    </select>
+
     <!-- Table 1: File Information -->
     <h2>File Information</h2>
-    <table id="file-info-table" class="table-container">
+    <table id="file-info-table" class="table-container" style="display: table;">
         <thead>
         <tr>
             <th><b>Serial Number</b></th>
@@ -49,7 +72,7 @@
         </thead>
         <tbody>
         
-            <tr>
+            <tr style="display: table-row;">
                 <td style="text-align: center;">1</td>
                 <td style="padding-left: 10px;"><b>A Discriminative Model For Identifying Readers And Assessing Text Comprehension From Eye Movements</b></td>
                 <td style="padding-left: 10px;">C:\Users\safia\Documents\multifileupload\media\files\A_Discriminative_Model_for_Identifying_Readers_and_Assessing_Text_Comprehension_from_Eye_Movements.pdf</td>
@@ -65,7 +88,7 @@
                 </td>
             </tr>
         
-            <tr>
+            <tr style="display: table-row;">
                 <td style="text-align: center;">2</td>
                 <td style="padding-left: 10px;"><b>A Generalized Theory For Full Microtremor Horizontaltovertical H V Z F Spectral Ratio Interpretation In Offshore And Onshore Environments</b></td>
                 <td style="padding-left: 10px;">C:\Users\safia\Documents\multifileupload\media\files\A_generalized_theory_for_full_microtremor_horizontal-to-vertical_H_V_z_f_spectral_ratio_interpretation_in_offshore_and_onshore_environments.pdf</td>
@@ -81,7 +104,7 @@
                 </td>
             </tr>
         
-            <tr>
+            <tr style="display: table-row;">
                 <td style="text-align: center;">3</td>
                 <td style="padding-left: 10px;"><b>A Minimax Nearoptimal Algorithm For Adaptive Rejection Sampling</b></td>
                 <td style="padding-left: 10px;">C:\Users\safia\Documents\multifileupload\media\files\A_minimax_near-optimal_algorithm_for_adaptive_rejection_sampling.pdf</td>
@@ -97,7 +120,7 @@
                 </td>
             </tr>
         
-            <tr>
+            <tr style="display: table-row;">
                 <td style="text-align: center;">4</td>
                 <td style="padding-left: 10px;"><b>Fokkerplanck Particle Systems For Bayesian Inference Computational Approaches</b></td>
                 <td style="padding-left: 10px;">C:\Users\safia\Documents\multifileupload\media\files\Fokker-Planck_Particle_Systems_for_Bayesian_Inference_Computational_Approaches.pdf</td>
@@ -113,7 +136,7 @@
                 </td>
             </tr>
         
-            <tr>
+            <tr style="display: table-row;">
                 <td style="text-align: center;">5</td>
                 <td style="padding-left: 10px;"><b>Including Data Management In Research Culture Increases The Reproducibility Of Scientific Results</b></td>
                 <td style="padding-left: 10px;">C:\Users\safia\Documents\multifileupload\media\files\Including_Data_Management_in_Research_Culture_Increases_the_Reproducibility_of_Scientific_Results.pdf</td>
@@ -129,24 +152,8 @@
                 </td>
             </tr>
         
-            <tr>
+            <tr style="display: table-row;">
                 <td style="text-align: center;">6</td>
-                <td style="padding-left: 10px;"><b>Intelligent Feature Selection Model Based On Particle Swarm Optimization To Detect Phishing Websites</b></td>
-                <td style="padding-left: 10px;">C:\Users\safia\Documents\multifileupload\media\files\Intelligent_feature_selection_model_based_on_particle_swarm_optimization_to_detect_phishing_websites.pdf</td>
-                <td style="text-align: center;">
-                    
-                        <p>✔ </p> <!-- Checkmark symbol ✓ -->
-                    
-                </td>
-                <td style="text-align: center;">
-                    
-                        <p>✔ </p> <!-- Checkmark symbol ✓ -->
-                    
-                </td>
-            </tr>
-        
-            <tr>
-                <td style="text-align: center;">7</td>
                 <td style="padding-left: 10px;"><b>Nonparametric Change Point Detection In Regression</b></td>
                 <td style="padding-left: 10px;">C:\Users\safia\Documents\multifileupload\media\files\Nonparametric_Change_Point_Detection_in_Regression.pdf</td>
                 <td style="text-align: center;">
@@ -161,8 +168,8 @@
                 </td>
             </tr>
         
-            <tr>
-                <td style="text-align: center;">8</td>
+            <tr style="display: table-row;">
+                <td style="text-align: center;">7</td>
                 <td style="padding-left: 10px;"><b>On The Relationship Between Eye Tracking Resolution And Performance Of Oculomotoric Biometric Identification</b></td>
                 <td style="padding-left: 10px;">C:\Users\safia\Documents\multifileupload\media\files\On_the_Relationship_between_Eye_Tracking_Resolution_and_Performance_of_Oculomotoric_Biometric_Identification.pdf</td>
                 <td style="text-align: center;">
@@ -177,8 +184,8 @@
                 </td>
             </tr>
         
-            <tr>
-                <td style="text-align: center;">9</td>
+            <tr style="display: table-row;">
+                <td style="text-align: center;">8</td>
                 <td style="padding-left: 10px;"><b>Variational Bayesian Inference For Nonlinear Hawkes Process With Gaussian Process Selfeffects</b></td>
                 <td style="padding-left: 10px;">C:\Users\safia\Documents\multifileupload\media\files\Variational_Bayesian_Inference_for_Nonlinear_Hawkes_Process_with_Gaussian_Process_Self-Effects.pdf</td>
                 <td style="text-align: center;">
@@ -198,7 +205,7 @@
 
     <!-- Table 2: Link Information -->
     <h2>Link Information</h2>
-    <table id="link-info-table" class="table-container">
+    <table id="link-info-table" class="table-container" style="display: table;">
         <thead>
         <tr>
             <th><b>Serial Number</b></th>
@@ -209,7 +216,7 @@
         </thead>
         <tbody>
         
-            <tr>
+            <tr style="display: table-row;">
                 <td style="text-align: center;" rowspan="1">1</td>
 
                 
@@ -231,7 +238,7 @@
             
             </tr>
         
-            <tr>
+            <tr style="display: table-row;">
                 <td style="text-align: center;" rowspan="1">2</td>
 
                 
@@ -253,12 +260,12 @@
             
             </tr>
         
-            <tr>
+            <tr style="display: table-row;">
                 <td style="text-align: center;" rowspan="2">3</td>
 
                 
                     
-                        </tr><tr>
+                        </tr><tr style="display: table-row;">
                             <td><a href="https://github.com/jlamweil/NNARS" target="_blank">https://github.com/jlamweil/NNARS</a></td>
 
                             
@@ -274,14 +281,25 @@
                                 </td>
                             
                         </tr>
+                    
+                
 
+            
+
+            
+
+
+            
+            
         
-            <tr>
+            <tr style="display: table-row;">
                 <td style="text-align: center;" rowspan="2">4</td>
 
-    
                 
-                    </tr><tr>
+
+            
+                
+                    </tr><tr style="display: table-row;">
                         <td><a href="https://doi.org/10.5281/zenodo.4506841" target="_blank">https://doi.org/10.5281/zenodo.4506841</a></td>
 
                         
@@ -303,48 +321,14 @@
             
             
         
-            <tr>
+            <tr style="display: table-row;">
                 <td style="text-align: center;" rowspan="6">5</td>
 
                 
 
             
                 
-                    </tr><tr>
-                        <td><a href="https://doi.org/10.5281/zenodo.6543497" target="_blank">https://doi.org/10.5281/zenodo.6543497</a></td>
-
-                        
-                            <td style="text-align: center;">
-                                <p>✔</p>
-                                
-
-                        
-                            </td><td style="text-align: center;">
-                                <img src="MultiFile Uploading_files/zenodo.png" alt="Zenodo Logo" style="width: 32px; height: 32px;">
-                                <br>
-                                Zenodo<br>
-                            </td>
-                        
-                    </tr>
-                
-                    <tr>
-                        <td><a href="https://doi.org/10.5281/zenodo.6472827" target="_blank">https://doi.org/10.5281/zenodo.6472827</a></td>
-
-                        
-                            <td style="text-align: center;">
-                                <p>✔</p>
-                                
-
-                        
-                            </td><td style="text-align: center;">
-                                <img src="MultiFile Uploading_files/zenodo.png" alt="Zenodo Logo" style="width: 32px; height: 32px;">
-                                <br>
-                                Zenodo<br>
-                            </td>
-                        
-                    </tr>
-                
-                    <tr>
+                    </tr><tr style="display: table-row;">
                         <td><a href="https://doi.org/10.5281/zenodo.2562268" target="_blank">https://doi.org/10.5281/zenodo.2562268</a></td>
 
                         
@@ -361,12 +345,8 @@
                         
                     </tr>
                 
-            
-
-            
-                
-                    <tr>
-                        <td><a href="https://doi.org/10.31234/osf.io/hf297" target="_blank">https://doi.org/10.31234/osf.io/hf297</a></td>
+                    <tr style="display: table-row;">
+                        <td><a href="https://doi.org/10.5281/zenodo.6472827" target="_blank">https://doi.org/10.5281/zenodo.6472827</a></td>
 
                         
                             <td style="text-align: center;">
@@ -374,59 +354,16 @@
                                 
 
                         
-                            </td><td style="text-align: center;"><img src="MultiFile Uploading_files/red_cross.png" alt="Red Cross" style="width: 32px; height: 32px;"><br>
-                                Not Found<br></td>
+                            </td><td style="text-align: center;">
+                                <img src="MultiFile Uploading_files/zenodo.png" alt="Zenodo Logo" style="width: 32px; height: 32px;">
+                                <br>
+                                Zenodo<br>
+                            </td>
                         
                     </tr>
                 
-                    <tr>
-                        <td><a href="https://osf.io/nvzhb/" target="_blank">https://osf.io/nvzhb/</a></td>
-
-                        
-                            <td style="text-align: center;">
-                                <p>✔</p>
-                                
-
-                        
-                            </td><td style="text-align: center;"><img src="MultiFile Uploading_files/red_cross.png" alt="Red Cross" style="width: 32px; height: 32px;"><br>
-                                Not Found<br></td>
-                        
-                    </tr>
-                
-            
-
-
-            
-            
-        
-            <tr>
-                <td style="text-align: center;" rowspan="4">6</td>
-
-                
-                    
-                        </tr><tr>
-                            <td><a href="https://github.com/SafialIslam302/Phishing-Website" target="_blank">https://github.com/SafialIslam302/Phishing-Website</a></td>
-
-                            
-                                <td style="text-align: center;">
-                                    <p>✔</p>
-                                    
-
-                            
-                                </td><td style="text-align: center;">
-                                    <img src="MultiFile Uploading_files/github.png" alt="GitHub Logo" style="width: 32px; height: 32px;">
-                                    <br>
-                                    Github<br>
-                                </td>
-                            
-                        </tr>
-                    
-                
-
-            
-                
-                    <tr>
-                        <td><a href="https://zenodo.org/record/8157333" target="_blank">https://zenodo.org/record/8157333</a></td>
+                    <tr style="display: table-row;">
+                        <td><a href="https://doi.org/10.5281/zenodo.6543497" target="_blank">https://doi.org/10.5281/zenodo.6543497</a></td>
 
                         
                             <td style="text-align: center;">
@@ -446,8 +383,8 @@
 
             
                 
-                    <tr>
-                        <td><a href="https://osf.io/uv2ew/" target="_blank">https://osf.io/uv2ew/</a></td>
+                    <tr style="display: table-row;">
+                        <td><a href="https://osf.io/nvzhb/" target="_blank">https://osf.io/nvzhb/</a></td>
 
                         
                             <td style="text-align: center;">
@@ -455,10 +392,22 @@
                                 
 
                         
-                            </td><td style="text-align: center;">
-                                <img src="MultiFile Uploading_files/osf.png" alt="OSF Logo" style="width: 32px; height: 32px;"><br>
-                                OSF<br>
-                            </td>
+                            </td><td style="text-align: center;"><img src="MultiFile Uploading_files/red_cross.png" alt="Red Cross" style="width: 32px; height: 32px;"><br>
+                                Not Found<br></td>
+                        
+                    </tr>
+                
+                    <tr style="display: table-row;">
+                        <td><a href="https://doi.org/10.31234/osf.io/hf297" target="_blank">https://doi.org/10.31234/osf.io/hf297</a></td>
+
+                        
+                            <td style="text-align: center;">
+                                <p>✔</p>
+                                
+
+                        
+                            </td><td style="text-align: center;"><img src="MultiFile Uploading_files/red_cross.png" alt="Red Cross" style="width: 32px; height: 32px;"><br>
+                                Not Found<br></td>
                         
                     </tr>
                 
@@ -468,12 +417,12 @@
             
             
         
-            <tr>
-                <td style="text-align: center;" rowspan="2">7</td>
+            <tr style="display: table-row;">
+                <td style="text-align: center;" rowspan="2">6</td>
 
                 
                     
-                        </tr><tr>
+                        </tr><tr style="display: table-row;">
                             <td><a href="https://github.com/akopich/gpcd" target="_blank">https://github.com/akopich/gpcd</a></td>
 
                             
@@ -500,8 +449,8 @@
             
             
         
-            <tr>
-                <td style="text-align: center;" rowspan="2">8</td>
+            <tr style="display: table-row;">
+                <td style="text-align: center;" rowspan="2">7</td>
 
                 
 
@@ -509,7 +458,7 @@
 
             
                 
-                    </tr><tr>
+                    </tr><tr style="display: table-row;">
                         <td><a href="https://osf.io/5zpvk/" target="_blank">https://osf.io/5zpvk/</a></td>
 
                         
@@ -529,29 +478,12 @@
             
             
         
-            <tr>
-                <td style="text-align: center;" rowspan="5">9</td>
+            <tr style="display: table-row;">
+                <td style="text-align: center;" rowspan="5">8</td>
 
                 
                     
-                        </tr><tr>
-                            <td><a href="https://github.com/noashin/NHGPS" target="_blank">https://github.com/noashin/NHGPS</a></td>
-
-                            
-                                <td style="text-align: center;">
-                                    <p>✔</p>
-                                    
-
-                            
-                                </td><td style="text-align: center;">
-                                    <img src="MultiFile Uploading_files/github.png" alt="GitHub Logo" style="width: 32px; height: 32px;">
-                                    <br>
-                                    Github<br>
-                                </td>
-                            
-                        </tr>
-                    
-                        <tr>
+                        </tr><tr style="display: table-row;">
                             <td><a href="https://github.com/slinderman/pypolyagamma" target="_blank">https://github.com/slinderman/pypolyagamma</a></td>
 
                             
@@ -568,7 +500,7 @@
                             
                         </tr>
                     
-                        <tr>
+                        <tr style="display: table-row;">
                             <td><a href="https://github.com/" target="_blank">https://github.com/</a></td>
 
                             
@@ -585,8 +517,25 @@
                             
                         </tr>
                     
-                        <tr>
+                        <tr style="display: table-row;">
                             <td><a href="https://github.com/google/jax" target="_blank">https://github.com/google/jax</a></td>
+
+                            
+                                <td style="text-align: center;">
+                                    <p>✔</p>
+                                    
+
+                            
+                                </td><td style="text-align: center;">
+                                    <img src="MultiFile Uploading_files/github.png" alt="GitHub Logo" style="width: 32px; height: 32px;">
+                                    <br>
+                                    Github<br>
+                                </td>
+                            
+                        </tr>
+                    
+                        <tr style="display: table-row;">
+                            <td><a href="https://github.com/noashin/NHGPS" target="_blank">https://github.com/noashin/NHGPS</a></td>
 
                             
                                 <td style="text-align: center;">
@@ -618,7 +567,7 @@
 
     <!-- Table 3: Download Information -->
     <h2>Download Information</h2>
-    <table id="download-info-table" class="table-container">
+    <table id="download-info-table" class="table-container" style="display: table;">
         <thead>
         <tr>
             <th><b>Serial Number</b></th>
@@ -632,7 +581,7 @@
         </thead>
         <tbody>
         
-            <tr>
+            <tr style="display: table-row;">
                 <td style="text-align: center;" rowspan="1">1</td>
 
                 
@@ -675,12 +624,12 @@
                 
 
                 <td>
-                    <p> 0 minutes 2 seconds</p>
+                    <p> 0 minutes 1 seconds</p>
                 </td>
             
             </tr>
         
-            <tr>
+            <tr style="display: table-row;">
                 <td style="text-align: center;" rowspan="1">2</td>
 
                 
@@ -723,16 +672,16 @@
                 
 
                 <td>
-                    <p> 0 minutes 33 seconds</p>
+                    <p> 0 minutes 24 seconds</p>
                 </td>
             
             </tr>
         
-            <tr>
+            <tr style="display: table-row;">
                 <td style="text-align: center;" rowspan="2">3</td>
 
                 
-                    </tr><tr>
+                    </tr><tr style="display: table-row;">
                         <td>
                             <a href="https://github.com/jlamweil/NNARS" target="_blank">https://github.com/jlamweil/NNARS</a>
                         </td>
@@ -748,9 +697,9 @@
                         
                             <td style="text-align: center;">
                                 
-                                    Python <br>
-                                
                                     Jupyter-Notebook <br>
+                                
+                                    Python <br>
                                 
                             </td>
                         
@@ -762,7 +711,7 @@
                         
 
                         <td>
-                            <p> 0 minutes 8 seconds</p>
+                            <p> 0 minutes 3 seconds</p>
                         </td>
                     </tr>
                 
@@ -774,7 +723,7 @@
             
             
         
-            <tr>
+            <tr style="display: table-row;">
                 <td style="text-align: center;" rowspan="1">4</td>
 
                 
@@ -817,12 +766,12 @@
                 
 
                 <td>
-                    <p> 0 minutes 56 seconds</p>
+                    <p> 0 minutes 48 seconds</p>
                 </td>
             
             </tr>
         
-            <tr>
+            <tr style="display: table-row;">
                 <td style="text-align: center;" rowspan="2">5</td>
 
                 
@@ -830,7 +779,7 @@
             
 
             
-                </tr><tr>
+                </tr><tr style="display: table-row;">
                     <td><p><a href="https://doi.org/10.5281/zenodo.6543497" target="_blank">https://doi.org/10.5281/zenodo.6543497</a></p></td>
 
                     
@@ -856,7 +805,7 @@
                     
 
                     <td>
-                        <p> 0 minutes 36 seconds</p>
+                        <p> 0 minutes 43 seconds</p>
                     </td>
 
                 </tr>
@@ -865,123 +814,11 @@
             
             
         
-            <tr>
-                <td style="text-align: center;" rowspan="4">6</td>
+            <tr style="display: table-row;">
+                <td style="text-align: center;" rowspan="2">6</td>
 
                 
-                    </tr><tr>
-                        <td>
-                            <a href="https://github.com/SafialIslam302/Phishing-Website" target="_blank">https://github.com/SafialIslam302/Phishing-Website</a>
-                        </td>
-
-                        
-                            <td>C:\Users\safia\Documents\multifileupload\Download\Intelligent feature selection model\Phishing-Website</td>
-                        
-
-                        
-                            <td style="text-align: center;">18.864 MB</td>
-                        
-
-                        
-                            <td style="text-align: center;">
-                                
-                                    Python <br>
-                                
-                                    Jupyter-Notebook <br>
-                                
-                            </td>
-                        
-
-                        
-                            <td style="text-align: center;">
-                                <p>✔ </p> <!-- Checkmark symbol ✓ -->
-                            </td>
-                        
-
-                        <td>
-                            <p> 2 minutes 2 seconds</p>
-                        </td>
-                    </tr>
-                
-
-            
-                <tr>
-                    <td><a href="https://osf.io/uv2ew/" target="_blank">https://osf.io/uv2ew/</a></td>
-
-                    
-                        <td>C:\Users\safia\Documents\multifileupload\Download\Intelligent feature selection model\uv2ew</td>
-                    
-
-                    
-                        <td style="text-align: center;">12.535 MB</td>
-                    
-
-                    
-                        <td style="text-align: center;">
-                            
-                                Python <br>
-                            
-                                Jupyter-Notebook <br>
-                            
-                        </td>
-                    
-
-                    
-                        <td style="text-align: center;">
-                            <p>✔ </p> <!-- Checkmark symbol ✓ -->
-                        </td>
-                    
-
-                    <td>
-                        <p> 2 minutes 2 seconds</p>
-                    </td>
-
-                </tr>
-            
-
-            
-                <tr>
-                    <td><p><a href="https://zenodo.org/record/8157333" target="_blank">https://zenodo.org/record/8157333</a></p></td>
-
-                    
-                        <td>C:\Users\safia\Documents\multifileupload\Download\Intelligent feature selection model\8157333</td>
-                    
-
-                    
-                        <td style="text-align: center;">11.505 MB</td>
-                    
-
-                    
-                        <td style="text-align: center;">
-                            
-                                Python <br>
-                            
-                                Jupyter-Notebook <br>
-                            
-                        </td>
-                    
-
-                    
-                        <td style="text-align: center;">
-                            <p>✔ </p> <!-- Checkmark symbol ✓ -->
-                        </td>
-                    
-
-                    <td>
-                        <p> 2 minutes 2 seconds</p>
-                    </td>
-
-                </tr>
-            
-
-            
-            
-        
-            <tr>
-                <td style="text-align: center;" rowspan="2">7</td>
-
-                
-                    </tr><tr>
+                    </tr><tr style="display: table-row;">
                         <td>
                             <a href="https://github.com/akopich/gpcd" target="_blank">https://github.com/akopich/gpcd</a>
                         </td>
@@ -1009,7 +846,7 @@
                         
 
                         <td>
-                            <p> 0 minutes 6 seconds</p>
+                            <p> 0 minutes 3 seconds</p>
                         </td>
                     </tr>
                 
@@ -1021,8 +858,8 @@
             
             
         
-            <tr>
-                <td style="text-align: center;" rowspan="1">8</td>
+            <tr style="display: table-row;">
+                <td style="text-align: center;" rowspan="1">7</td>
 
                 
 
@@ -1064,16 +901,16 @@
                 
 
                 <td>
-                    <p> 0 minutes 43 seconds</p>
+                    <p> 0 minutes 17 seconds</p>
                 </td>
             
             </tr>
         
-            <tr>
-                <td style="text-align: center;" rowspan="2">9</td>
+            <tr style="display: table-row;">
+                <td style="text-align: center;" rowspan="2">8</td>
 
                 
-                    </tr><tr>
+                    </tr><tr style="display: table-row;">
                         <td>
                             <a href="https://github.com/noashin/NHGPS" target="_blank">https://github.com/noashin/NHGPS</a>
                         </td>
@@ -1103,7 +940,7 @@
                         
 
                         <td>
-                            <p> 1 minute 1 seconds</p>
+                            <p> 0 minutes 55 seconds</p>
                         </td>
                     </tr>
                 
@@ -1226,6 +1063,53 @@
 </div>
 
 <script>
+    // Function to toggle the visibility of Table 2 and Table 3 based on the selected option
+    function toggleTables() {
+        var selectedTable = document.getElementById('serialNumberDropdown').value;
+
+        // Show Table 1 (Always displayed)
+        document.getElementById('file-info-table').style.display = 'table';
+
+        // Hide Table 2 and Table 3
+        document.getElementById('link-info-table').style.display = 'none';
+        document.getElementById('download-info-table').style.display = 'none';
+
+        // If a table other than Table 1 is selected, show Table 2 and Table 3
+        if (selectedTable !== 'file-info-table') {
+            document.getElementById('link-info-table').style.display = 'table';
+            document.getElementById('download-info-table').style.display = 'table';
+        }
+    }
+</script>
+
+<script>
+    // Function to update the table based on the selected serial number
+    function updateTable(tableId) {
+        var selectedSerialNumber = document.getElementById('serialNumberDropdown').value;
+        var rows = document.querySelectorAll('#' + tableId + ' tbody tr');
+        var rowsToShow = new Set();
+
+        rows.forEach(function (row, rowIndex) {
+            var rowSerialNumber = row.querySelector('td:first-child').innerText.trim();
+            if (rowSerialNumber === selectedSerialNumber || selectedSerialNumber === 'All') {
+                var rowspan = parseInt(row.querySelector('td:first-child').getAttribute('rowspan')) || 1;
+                for (var i = rowIndex; i < rowIndex + rowspan; i++) {
+                    rowsToShow.add(i);
+                }
+            }
+        });
+
+        rows.forEach(function (row, rowIndex) {
+            if (rowsToShow.has(rowIndex)) {
+                row.style.display = 'table-row';
+            } else {
+                row.style.display = 'none';
+            }
+        });
+    }
+</script>
+
+<script>
     function showDiv() {
         document.getElementById('resultsContainer').style.display = "block";
     }
@@ -1284,6 +1168,64 @@
 
     // Attach the event listener for the submit button
     document.getElementById("submitBtn").addEventListener("click", handleFormSubmission);
+</script>
+
+<script>
+    // Store the selected serial number
+    var selectedSerialNumber = null;
+
+    // Function to handle the serial number click event
+    function handleSerialNumberClick(serialNumber) {
+        // Store the selected serial number
+        selectedSerialNumber = serialNumber;
+
+        // Update the Link Information table
+        updateLinkInformationTable();
+
+        // Update the Download Information table
+        updateDownloadInformationTable();
+    }
+
+    // Function to update the Link Information table based on the selected serial number
+    function updateLinkInformationTable() {
+        // Get all rows in the Link Information table
+        var linkRows = document.querySelectorAll('#link-info-table tbody tr');
+
+        // Loop through all rows and hide/show them based on the selected serial number
+        linkRows.forEach(function (row) {
+            var rowSerialNumber = row.querySelector('td:first-child').innerText.trim();
+            if (rowSerialNumber === selectedSerialNumber) {
+                row.style.display = 'table-row';
+            } else {
+                row.style.display = 'none';
+            }
+        });
+    }
+
+    // Function to update the Download Information table based on the selected serial number
+    function updateDownloadInformationTable() {
+        // Get all rows in the Download Information table
+        var downloadRows = document.querySelectorAll('#download-info-table tbody tr');
+
+        // Loop through all rows and hide/show them based on the selected serial number
+        downloadRows.forEach(function (row) {
+            var rowSerialNumber = row.querySelector('td:first-child').innerText.trim();
+            if (rowSerialNumber === selectedSerialNumber) {
+                row.style.display = 'table-row';
+            } else {
+                row.style.display = 'none';
+            }
+        });
+    }
+
+    // Attach click event listeners to the serial number cells in the File Information table
+    var serialNumberCells = document.querySelectorAll('#file-info-table tbody td:first-child');
+    serialNumberCells.forEach(function (cell) {
+        cell.addEventListener('click', function () {
+            var serialNumber = cell.innerText.trim();
+            handleSerialNumberClick(serialNumber);
+        });
+    });
 </script>
 
 
