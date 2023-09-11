@@ -1087,6 +1087,66 @@
     }
 </script>
 
+    <script>
+    function showDiv() {
+        document.getElementById('resultsContainer').style.display = "block";
+    }
+</script>
+
+<script>
+    function handleFormSubmission(event) {
+        event.preventDefault(); // Prevent the default form submission
+
+        // Display the loading overlay
+        // document.getElementById("heading").style.display = "block";
+        // document.getElementById("uploadForm").style.display = "block";
+        // document.getElementById("resultsContainer").style.display = "block";
+        document.getElementById("loadingOverlay").style.display = "block";
+
+        // Perform the form submission
+        var form = document.getElementById("uploadForm");
+        var formData = new FormData(form);
+
+        // Send the form data using AJAX
+        var xhr = new XMLHttpRequest();
+        xhr.open("POST", form.action);
+        xhr.onload = function () {
+            if (xhr.status === 200) {
+                // Hide the loading overlay
+                document.getElementById("heading").style.display = "block";
+                document.getElementById("uploadForm").style.display = "block";
+                // document.getElementById("resultsContainer").style.display = "none";
+                document.getElementById("loadingOverlay").style.display = "none";
+
+                // Extract the results HTML
+                var resultsHtml = xhr.responseText;
+
+                // Find the results container element
+                // var resultsContainer = document.getElementById("resultsContainer");
+
+                // Update the results container with the received HTML
+                var tempContainer = document.createElement("div");
+                tempContainer.innerHTML = resultsHtml;
+
+                // Find the results container element inside the temporary container
+                var resultsContainer = tempContainer.querySelector("#resultsContainer");
+
+                // Update the results container with the content
+                document.getElementById("resultsContainer").innerHTML = resultsContainer.innerHTML;
+
+                // Hide the form and heading
+                //form.style.display = "none";
+                document.getElementById("uploadForm").style.display = "block";
+                document.getElementById("heading").style.display = "block";
+            }
+        };
+        xhr.send(formData);
+    }
+
+    // Attach the event listener for the submit button
+    document.getElementById("submitBtn").addEventListener("click", handleFormSubmission);
+</script>
+
     
 </body>
 </html>
