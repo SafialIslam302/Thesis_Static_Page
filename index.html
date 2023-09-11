@@ -1,21 +1,21 @@
 <!DOCTYPE html>
-<!-- saved from url=(0022)http://127.0.0.1:8000/ -->
-<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-
+<html lang="en">
+<meta charset="UTF-8">
+<head>
     <title>MultiFile Uploading</title>
-    <link rel="stylesheet" type="text/css" href="css/styles.css">
-    <link rel="shortcut icon" href="http://127.0.0.1:8000/#">
-<style>@font-face{font-family:"euclid";src:url("chrome-extension://ebgofhigpedaepplnmglnedbfjemmpnh/static/fonts/EuclidCircularA-Light.otf") format("opentype");font-weight:300;font-style:normal}@font-face{font-family:"euclid";src:url("chrome-extension://ebgofhigpedaepplnmglnedbfjemmpnh/static/fonts/EuclidCircularA-Regular.otf") format("opentype");font-weight:400;font-style:normal}@font-face{font-family:"euclid";src:url("chrome-extension://ebgofhigpedaepplnmglnedbfjemmpnh/static/fonts/EuclidCircularA-Medium.otf") format("opentype");font-weight:500;font-style:normal}@font-face{font-family:"euclid";src:url("chrome-extension://ebgofhigpedaepplnmglnedbfjemmpnh/static/fonts/EuclidCircularA-Bold.otf") format("opentype");font-weight:600;font-style:normal}</style></head>
+    <link rel="stylesheet" type="text/css" href="/static/css/styles.css?">
+    <link rel="shortcut icon" href="#"/>
+</head>
 
-<body data-new-gr-c-s-check-loaded="14.1123.0" data-gr-ext-installed="">
+<body>
 
-<div id="heading" style="display: block;"><h1>Automating Investigations of Reproducibility</h1></div>
+<div id="heading"><h1>Automating Investigations of Reproducibility</h1></div>
 
-<form id="uploadForm" action="http://127.0.0.1:8000/" method="post" enctype="multipart/form-data" style="display: block;">
-    <input type="hidden" name="csrfmiddlewaretoken" value="0T4BG88lsIJahJA2zsWIXDXYKTlSmc9Uy4131ndXft1WgpJdQGWOS30OvYex9rKt">
+<form id="uploadForm" action="" method="post" enctype="multipart/form-data">
+    <input type="hidden" name="csrfmiddlewaretoken" value="25boIM5gonKsO7yYXXIm3dfy9dtHM4hpAg8Q31aSb82eNNH9ebIsYDioUimmzjSY">
     <div class="file-upload">
         <label for="fileInput" class="button">Select Files
-            <input type="file" id="fileInput" name="file[]" multiple="">
+            <input type="file" id="fileInput" name="file[]" multiple>
         </label>
     </div>
     <br><br>
@@ -35,35 +35,36 @@
 
 <div id="resultsContainer" class="container" style="display: block;">
 
-    <!-- Add a dropdown menu to select a serial number -->
-    <label for="serialNumberDropdown"><b>Select Serial Number:</b></label>
-    <select id="serialNumberDropdown" onchange="updateTable(&#39;file-info-table&#39;); updateTable(&#39;link-info-table&#39;); updateTable(&#39;download-info-table&#39;); toggleTables();">
-        <option value="All">All</option>
-        
-            <option value="1">1</option>
-        
-            <option value="2">2</option>
-        
-            <option value="3">3</option>
-        
-            <option value="4">4</option>
-        
-            <option value="5">5</option>
-        
-            <option value="6">6</option>
-        
-            <option value="7">7</option>
-        
-            <option value="8">8</option>
-        
-    </select>
-
     <!-- Table 1: File Information -->
-    <h2>File Information</h2>
+    <h2 style="display: block;">File Information</h2>
     <table id="file-info-table" class="table-container" style="display: table;">
         <thead>
         <tr>
-            <th><b>Serial Number</b></th>
+            <!-- Add a dropdown menu to select a serial number -->
+            <th><b>Serial Number<br>
+                <label for="serialNumberDropdown"><b>See Details</b></label>
+                <select id="serialNumberDropdown" onchange="updateTable('file-info-table'); updateTable('link-info-table'); updateTable('download-info-table'); toggleTables();">
+                    <option value="All">All</option>
+                    
+                        <option value="1">1</option>
+                    
+                        <option value="2">2</option>
+                    
+                        <option value="3">3</option>
+                    
+                        <option value="4">4</option>
+                    
+                        <option value="5">5</option>
+                    
+                        <option value="6">6</option>
+                    
+                        <option value="7">7</option>
+                    
+                        <option value="8">8</option>
+                    
+                        <option value="9">9</option>
+                    
+                </select></b></th>
             <th><b>Paper Title</b></th>
             <th><b>File Path</b></th>
             <th><b>Data Accessibility</b></th>
@@ -154,6 +155,22 @@
         
             <tr style="display: table-row;">
                 <td style="text-align: center;">6</td>
+                <td style="padding-left: 10px;"><b>Intelligent Feature Selection Model Based On Particle Swarm Optimization To Detect Phishing Websites</b></td>
+                <td style="padding-left: 10px;">C:\Users\safia\Documents\multifileupload\media\files\Intelligent_feature_selection_model_based_on_particle_swarm_optimization_to_detect_phishing_websites.pdf</td>
+                <td style="text-align: center;">
+                    
+                        <p>✔ </p> <!-- Checkmark symbol ✓ -->
+                    
+                </td>
+                <td style="text-align: center;">
+                    
+                        <p>✔ </p> <!-- Checkmark symbol ✓ -->
+                    
+                </td>
+            </tr>
+        
+            <tr style="display: table-row;">
+                <td style="text-align: center;">7</td>
                 <td style="padding-left: 10px;"><b>Nonparametric Change Point Detection In Regression</b></td>
                 <td style="padding-left: 10px;">C:\Users\safia\Documents\multifileupload\media\files\Nonparametric_Change_Point_Detection_in_Regression.pdf</td>
                 <td style="text-align: center;">
@@ -169,7 +186,7 @@
             </tr>
         
             <tr style="display: table-row;">
-                <td style="text-align: center;">7</td>
+                <td style="text-align: center;">8</td>
                 <td style="padding-left: 10px;"><b>On The Relationship Between Eye Tracking Resolution And Performance Of Oculomotoric Biometric Identification</b></td>
                 <td style="padding-left: 10px;">C:\Users\safia\Documents\multifileupload\media\files\On_the_Relationship_between_Eye_Tracking_Resolution_and_Performance_of_Oculomotoric_Biometric_Identification.pdf</td>
                 <td style="text-align: center;">
@@ -185,7 +202,7 @@
             </tr>
         
             <tr style="display: table-row;">
-                <td style="text-align: center;">8</td>
+                <td style="text-align: center;">9</td>
                 <td style="padding-left: 10px;"><b>Variational Bayesian Inference For Nonlinear Hawkes Process With Gaussian Process Selfeffects</b></td>
                 <td style="padding-left: 10px;">C:\Users\safia\Documents\multifileupload\media\files\Variational_Bayesian_Inference_for_Nonlinear_Hawkes_Process_with_Gaussian_Process_Self-Effects.pdf</td>
                 <td style="text-align: center;">
@@ -204,7 +221,7 @@
     </table>
 
     <!-- Table 2: Link Information -->
-    <h2>Link Information</h2>
+    <h2 style="display: block;">Link Information</h2>
     <table id="link-info-table" class="table-container" style="display: table;">
         <thead>
         <tr>
@@ -232,7 +249,7 @@
                 <td style="text-align: center;"><p>✘</p></td>
 
                 
-                    <td style="text-align: center;"><img src="MultiFile Uploading_files/red_cross.png" alt="Red Cross" style="width: 32px; height: 32px;"><br>
+                    <td style="text-align: center;"><img src="/static/red_cross.png" alt="Red Cross" style="width: 32px; height: 32px;"><br>
                         Not Found<br></td>
                 
             
@@ -254,7 +271,7 @@
                 <td style="text-align: center;"><p>✘</p></td>
 
                 
-                    <td style="text-align: center;"><img src="MultiFile Uploading_files/red_cross.png" alt="Red Cross" style="width: 32px; height: 32px;"><br>
+                    <td style="text-align: center;"><img src="/static/red_cross.png" alt="Red Cross" style="width: 32px; height: 32px;"><br>
                         Not Found<br></td>
                 
             
@@ -275,7 +292,7 @@
 
                             
                                 </td><td style="text-align: center;">
-                                    <img src="MultiFile Uploading_files/github.png" alt="GitHub Logo" style="width: 32px; height: 32px;">
+                                    <img src="/static/github.png" alt="GitHub Logo" style="width: 32px; height: 32px;">
                                     <br>
                                     Github<br>
                                 </td>
@@ -308,7 +325,7 @@
                                 
 
                         
-                            </td><td style="text-align: center;"><img src="MultiFile Uploading_files/red_cross.png" alt="Red Cross" style="width: 32px; height: 32px;"><br>
+                            </td><td style="text-align: center;"><img src="/static/red_cross.png" alt="Red Cross" style="width: 32px; height: 32px;"><br>
                                 Not Found<br></td>
                         
                     </tr>
@@ -338,7 +355,7 @@
 
                         
                             </td><td style="text-align: center;">
-                                <img src="MultiFile Uploading_files/zenodo.png" alt="Zenodo Logo" style="width: 32px; height: 32px;">
+                                <img src="/static/zenodo.png" alt="Zenodo Logo" style="width: 32px; height: 32px;">
                                 <br>
                                 Zenodo<br>
                             </td>
@@ -355,7 +372,7 @@
 
                         
                             </td><td style="text-align: center;">
-                                <img src="MultiFile Uploading_files/zenodo.png" alt="Zenodo Logo" style="width: 32px; height: 32px;">
+                                <img src="/static/zenodo.png" alt="Zenodo Logo" style="width: 32px; height: 32px;">
                                 <br>
                                 Zenodo<br>
                             </td>
@@ -372,7 +389,7 @@
 
                         
                             </td><td style="text-align: center;">
-                                <img src="MultiFile Uploading_files/zenodo.png" alt="Zenodo Logo" style="width: 32px; height: 32px;">
+                                <img src="/static/zenodo.png" alt="Zenodo Logo" style="width: 32px; height: 32px;">
                                 <br>
                                 Zenodo<br>
                             </td>
@@ -392,7 +409,7 @@
                                 
 
                         
-                            </td><td style="text-align: center;"><img src="MultiFile Uploading_files/red_cross.png" alt="Red Cross" style="width: 32px; height: 32px;"><br>
+                            </td><td style="text-align: center;"><img src="/static/red_cross.png" alt="Red Cross" style="width: 32px; height: 32px;"><br>
                                 Not Found<br></td>
                         
                     </tr>
@@ -406,7 +423,7 @@
                                 
 
                         
-                            </td><td style="text-align: center;"><img src="MultiFile Uploading_files/red_cross.png" alt="Red Cross" style="width: 32px; height: 32px;"><br>
+                            </td><td style="text-align: center;"><img src="/static/red_cross.png" alt="Red Cross" style="width: 32px; height: 32px;"><br>
                                 Not Found<br></td>
                         
                     </tr>
@@ -418,7 +435,76 @@
             
         
             <tr style="display: table-row;">
-                <td style="text-align: center;" rowspan="2">6</td>
+                <td style="text-align: center;" rowspan="4">6</td>
+
+                
+                    
+                        </tr><tr style="display: table-row;">
+                            <td><a href="https://github.com/SafialIslam302/Phishing-Website" target="_blank">https://github.com/SafialIslam302/Phishing-Website</a></td>
+
+                            
+                                <td style="text-align: center;">
+                                    <p>✔</p>
+                                    
+
+                            
+                                </td><td style="text-align: center;">
+                                    <img src="/static/github.png" alt="GitHub Logo" style="width: 32px; height: 32px;">
+                                    <br>
+                                    Github<br>
+                                </td>
+                            
+                        </tr>
+                    
+                
+
+            
+                
+                    <tr style="display: table-row;">
+                        <td><a href="https://zenodo.org/record/8157333" target="_blank">https://zenodo.org/record/8157333</a></td>
+
+                        
+                            <td style="text-align: center;">
+                                <p>✔</p>
+                                
+
+                        
+                            </td><td style="text-align: center;">
+                                <img src="/static/zenodo.png" alt="Zenodo Logo" style="width: 32px; height: 32px;">
+                                <br>
+                                Zenodo<br>
+                            </td>
+                        
+                    </tr>
+                
+            
+
+            
+                
+                    <tr style="display: table-row;">
+                        <td><a href="https://osf.io/uv2ew/" target="_blank">https://osf.io/uv2ew/</a></td>
+
+                        
+                            <td style="text-align: center;">
+                                <p>✔</p>
+                                
+
+                        
+                            </td><td style="text-align: center;">
+                                <img src="/static/osf.png" alt="OSF Logo" style="width: 32px; height: 32px;"><br>
+                                OSF<br>
+                            </td>
+                        
+                    </tr>
+                
+            
+
+
+            
+            
+        
+            <tr style="display: table-row;">
+                <td style="text-align: center;" rowspan="2">7</td>
 
                 
                     
@@ -432,7 +518,7 @@
 
                             
                                 </td><td style="text-align: center;">
-                                    <img src="MultiFile Uploading_files/github.png" alt="GitHub Logo" style="width: 32px; height: 32px;">
+                                    <img src="/static/github.png" alt="GitHub Logo" style="width: 32px; height: 32px;">
                                     <br>
                                     Github<br>
                                 </td>
@@ -450,7 +536,7 @@
             
         
             <tr style="display: table-row;">
-                <td style="text-align: center;" rowspan="2">7</td>
+                <td style="text-align: center;" rowspan="2">8</td>
 
                 
 
@@ -467,7 +553,7 @@
                                 
 
                         
-                            </td><td style="text-align: center;"><img src="MultiFile Uploading_files/red_cross.png" alt="Red Cross" style="width: 32px; height: 32px;"><br>
+                            </td><td style="text-align: center;"><img src="/static/red_cross.png" alt="Red Cross" style="width: 32px; height: 32px;"><br>
                                 Not Found<br></td>
                         
                     </tr>
@@ -479,11 +565,28 @@
             
         
             <tr style="display: table-row;">
-                <td style="text-align: center;" rowspan="5">8</td>
+                <td style="text-align: center;" rowspan="5">9</td>
 
                 
                     
                         </tr><tr style="display: table-row;">
+                            <td><a href="https://github.com/noashin/NHGPS" target="_blank">https://github.com/noashin/NHGPS</a></td>
+
+                            
+                                <td style="text-align: center;">
+                                    <p>✔</p>
+                                    
+
+                            
+                                </td><td style="text-align: center;">
+                                    <img src="/static/github.png" alt="GitHub Logo" style="width: 32px; height: 32px;">
+                                    <br>
+                                    Github<br>
+                                </td>
+                            
+                        </tr>
+                    
+                        <tr style="display: table-row;">
                             <td><a href="https://github.com/slinderman/pypolyagamma" target="_blank">https://github.com/slinderman/pypolyagamma</a></td>
 
                             
@@ -493,7 +596,7 @@
 
                             
                                 </td><td style="text-align: center;">
-                                    <img src="MultiFile Uploading_files/github.png" alt="GitHub Logo" style="width: 32px; height: 32px;">
+                                    <img src="/static/github.png" alt="GitHub Logo" style="width: 32px; height: 32px;">
                                     <br>
                                     Github<br>
                                 </td>
@@ -510,7 +613,7 @@
 
                             
                                 </td><td style="text-align: center;">
-                                    <img src="MultiFile Uploading_files/github.png" alt="GitHub Logo" style="width: 32px; height: 32px;">
+                                    <img src="/static/github.png" alt="GitHub Logo" style="width: 32px; height: 32px;">
                                     <br>
                                     Github<br>
                                 </td>
@@ -527,24 +630,7 @@
 
                             
                                 </td><td style="text-align: center;">
-                                    <img src="MultiFile Uploading_files/github.png" alt="GitHub Logo" style="width: 32px; height: 32px;">
-                                    <br>
-                                    Github<br>
-                                </td>
-                            
-                        </tr>
-                    
-                        <tr style="display: table-row;">
-                            <td><a href="https://github.com/noashin/NHGPS" target="_blank">https://github.com/noashin/NHGPS</a></td>
-
-                            
-                                <td style="text-align: center;">
-                                    <p>✔</p>
-                                    
-
-                            
-                                </td><td style="text-align: center;">
-                                    <img src="MultiFile Uploading_files/github.png" alt="GitHub Logo" style="width: 32px; height: 32px;">
+                                    <img src="/static/github.png" alt="GitHub Logo" style="width: 32px; height: 32px;">
                                     <br>
                                     Github<br>
                                 </td>
@@ -566,7 +652,7 @@
     </table>
 
     <!-- Table 3: Download Information -->
-    <h2>Download Information</h2>
+    <h2 style="display: block;">Download Information</h2>
     <table id="download-info-table" class="table-container" style="display: table;">
         <thead>
         <tr>
@@ -592,27 +678,27 @@
 
             
                 <td style="text-align: center;">
-                    <img src="MultiFile Uploading_files/no_link.png" alt="Red Cross" style="width: 32px; height: 32px;"><br>
+                    <img src="/static/no_link.png" alt="Red Cross" style="width: 32px; height: 32px;"><br>
                     No Link Found<br>
                 </td>
 
                 
                     <td style="text-align: center;">
-                        <img src="MultiFile Uploading_files/no_path.jpg" alt="Red Cross" style="width: 32px; height: 32px;"><br>
+                        <img src="/static/no_path.jpg" alt="Red Cross" style="width: 32px; height: 32px;"><br>
                         No Path Found<br>
                     </td>
                 
 
                 
                     <td style="text-align: center;">
-                        <img src="MultiFile Uploading_files/no_memory.png" alt="Red Cross" style="width: 32px; height: 32px;"><br>
+                        <img src="/static/no_memory.png" alt="Red Cross" style="width: 32px; height: 32px;"><br>
                         Not Found<br>
                     </td>
                 
 
                 
                     <td style="text-align: center;">
-                        <img src="MultiFile Uploading_files/file_not_found.png" alt="Red Cross" style="width: 32px; height: 32px;"><br>
+                        <img src="/static/file_not_found.png" alt="Red Cross" style="width: 32px; height: 32px;"><br>
                         No File Found<br>
                     </td>
                 
@@ -640,27 +726,27 @@
 
             
                 <td style="text-align: center;">
-                    <img src="MultiFile Uploading_files/no_link.png" alt="Red Cross" style="width: 32px; height: 32px;"><br>
+                    <img src="/static/no_link.png" alt="Red Cross" style="width: 32px; height: 32px;"><br>
                     No Link Found<br>
                 </td>
 
                 
                     <td style="text-align: center;">
-                        <img src="MultiFile Uploading_files/no_path.jpg" alt="Red Cross" style="width: 32px; height: 32px;"><br>
+                        <img src="/static/no_path.jpg" alt="Red Cross" style="width: 32px; height: 32px;"><br>
                         No Path Found<br>
                     </td>
                 
 
                 
                     <td style="text-align: center;">
-                        <img src="MultiFile Uploading_files/no_memory.png" alt="Red Cross" style="width: 32px; height: 32px;"><br>
+                        <img src="/static/no_memory.png" alt="Red Cross" style="width: 32px; height: 32px;"><br>
                         Not Found<br>
                     </td>
                 
 
                 
                     <td style="text-align: center;">
-                        <img src="MultiFile Uploading_files/file_not_found.png" alt="Red Cross" style="width: 32px; height: 32px;"><br>
+                        <img src="/static/file_not_found.png" alt="Red Cross" style="width: 32px; height: 32px;"><br>
                         No File Found<br>
                     </td>
                 
@@ -672,7 +758,7 @@
                 
 
                 <td>
-                    <p> 0 minutes 24 seconds</p>
+                    <p> 0 minutes 26 seconds</p>
                 </td>
             
             </tr>
@@ -697,9 +783,9 @@
                         
                             <td style="text-align: center;">
                                 
-                                    Jupyter-Notebook <br>
-                                
                                     Python <br>
+                                
+                                    Jupyter-Notebook <br>
                                 
                             </td>
                         
@@ -711,7 +797,7 @@
                         
 
                         <td>
-                            <p> 0 minutes 3 seconds</p>
+                            <p> 0 minutes 4 seconds</p>
                         </td>
                     </tr>
                 
@@ -734,27 +820,27 @@
 
             
                 <td style="text-align: center;">
-                    <img src="MultiFile Uploading_files/no_link.png" alt="Red Cross" style="width: 32px; height: 32px;"><br>
+                    <img src="/static/no_link.png" alt="Red Cross" style="width: 32px; height: 32px;"><br>
                     No Link Found<br>
                 </td>
 
                 
                     <td style="text-align: center;">
-                        <img src="MultiFile Uploading_files/no_path.jpg" alt="Red Cross" style="width: 32px; height: 32px;"><br>
+                        <img src="/static/no_path.jpg" alt="Red Cross" style="width: 32px; height: 32px;"><br>
                         No Path Found<br>
                     </td>
                 
 
                 
                     <td style="text-align: center;">
-                        <img src="MultiFile Uploading_files/no_memory.png" alt="Red Cross" style="width: 32px; height: 32px;"><br>
+                        <img src="/static/no_memory.png" alt="Red Cross" style="width: 32px; height: 32px;"><br>
                         Not Found<br>
                     </td>
                 
 
                 
                     <td style="text-align: center;">
-                        <img src="MultiFile Uploading_files/file_not_found.png" alt="Red Cross" style="width: 32px; height: 32px;"><br>
+                        <img src="/static/file_not_found.png" alt="Red Cross" style="width: 32px; height: 32px;"><br>
                         No File Found<br>
                     </td>
                 
@@ -766,7 +852,7 @@
                 
 
                 <td>
-                    <p> 0 minutes 48 seconds</p>
+                    <p> 1 minute 0 seconds</p>
                 </td>
             
             </tr>
@@ -805,7 +891,7 @@
                     
 
                     <td>
-                        <p> 0 minutes 43 seconds</p>
+                        <p> 0 minutes 44 seconds</p>
                     </td>
 
                 </tr>
@@ -815,7 +901,119 @@
             
         
             <tr style="display: table-row;">
-                <td style="text-align: center;" rowspan="2">6</td>
+                <td style="text-align: center;" rowspan="4">6</td>
+
+                
+                    </tr><tr style="display: table-row;">
+                        <td>
+                            <a href="https://github.com/SafialIslam302/Phishing-Website" target="_blank">https://github.com/SafialIslam302/Phishing-Website</a>
+                        </td>
+
+                        
+                            <td>C:\Users\safia\Documents\multifileupload\Download\Intelligent feature selection model\Phishing-Website</td>
+                        
+
+                        
+                            <td style="text-align: center;">18.864 MB</td>
+                        
+
+                        
+                            <td style="text-align: center;">
+                                
+                                    Python <br>
+                                
+                                    Jupyter-Notebook <br>
+                                
+                            </td>
+                        
+
+                        
+                            <td style="text-align: center;">
+                                <p>✔ </p> <!-- Checkmark symbol ✓ -->
+                            </td>
+                        
+
+                        <td>
+                            <p> 2 minutes 13 seconds</p>
+                        </td>
+                    </tr>
+                
+
+            
+                <tr style="display: table-row;">
+                    <td><a href="https://osf.io/uv2ew/" target="_blank">https://osf.io/uv2ew/</a></td>
+
+                    
+                        <td>C:\Users\safia\Documents\multifileupload\Download\Intelligent feature selection model\uv2ew</td>
+                    
+
+                    
+                        <td style="text-align: center;">12.535 MB</td>
+                    
+
+                    
+                        <td style="text-align: center;">
+                            
+                                Python <br>
+                            
+                                Jupyter-Notebook <br>
+                            
+                        </td>
+                    
+
+                    
+                        <td style="text-align: center;">
+                            <p>✔ </p> <!-- Checkmark symbol ✓ -->
+                        </td>
+                    
+
+                    <td>
+                        <p> 2 minutes 13 seconds</p>
+                    </td>
+
+                </tr>
+            
+
+            
+                <tr style="display: table-row;">
+                    <td><p><a href="https://zenodo.org/record/8157333" target="_blank">https://zenodo.org/record/8157333</a></p></td>
+
+                    
+                        <td>C:\Users\safia\Documents\multifileupload\Download\Intelligent feature selection model\8157333</td>
+                    
+
+                    
+                        <td style="text-align: center;">11.505 MB</td>
+                    
+
+                    
+                        <td style="text-align: center;">
+                            
+                                Python <br>
+                            
+                                Jupyter-Notebook <br>
+                            
+                        </td>
+                    
+
+                    
+                        <td style="text-align: center;">
+                            <p>✔ </p> <!-- Checkmark symbol ✓ -->
+                        </td>
+                    
+
+                    <td>
+                        <p> 2 minutes 13 seconds</p>
+                    </td>
+
+                </tr>
+            
+
+            
+            
+        
+            <tr style="display: table-row;">
+                <td style="text-align: center;" rowspan="2">7</td>
 
                 
                     </tr><tr style="display: table-row;">
@@ -859,7 +1057,7 @@
             
         
             <tr style="display: table-row;">
-                <td style="text-align: center;" rowspan="1">7</td>
+                <td style="text-align: center;" rowspan="1">8</td>
 
                 
 
@@ -869,27 +1067,27 @@
 
             
                 <td style="text-align: center;">
-                    <img src="MultiFile Uploading_files/no_link.png" alt="Red Cross" style="width: 32px; height: 32px;"><br>
+                    <img src="/static/no_link.png" alt="Red Cross" style="width: 32px; height: 32px;"><br>
                     No Link Found<br>
                 </td>
 
                 
                     <td style="text-align: center;">
-                        <img src="MultiFile Uploading_files/no_path.jpg" alt="Red Cross" style="width: 32px; height: 32px;"><br>
+                        <img src="/static/no_path.jpg" alt="Red Cross" style="width: 32px; height: 32px;"><br>
                         No Path Found<br>
                     </td>
                 
 
                 
                     <td style="text-align: center;">
-                        <img src="MultiFile Uploading_files/no_memory.png" alt="Red Cross" style="width: 32px; height: 32px;"><br>
+                        <img src="/static/no_memory.png" alt="Red Cross" style="width: 32px; height: 32px;"><br>
                         Not Found<br>
                     </td>
                 
 
                 
                     <td style="text-align: center;">
-                        <img src="MultiFile Uploading_files/file_not_found.png" alt="Red Cross" style="width: 32px; height: 32px;"><br>
+                        <img src="/static/file_not_found.png" alt="Red Cross" style="width: 32px; height: 32px;"><br>
                         No File Found<br>
                     </td>
                 
@@ -901,13 +1099,13 @@
                 
 
                 <td>
-                    <p> 0 minutes 17 seconds</p>
+                    <p> 0 minutes 22 seconds</p>
                 </td>
             
             </tr>
         
             <tr style="display: table-row;">
-                <td style="text-align: center;" rowspan="2">8</td>
+                <td style="text-align: center;" rowspan="2">9</td>
 
                 
                     </tr><tr style="display: table-row;">
@@ -940,7 +1138,7 @@
                         
 
                         <td>
-                            <p> 0 minutes 55 seconds</p>
+                            <p> 1 minute 4 seconds</p>
                         </td>
                     </tr>
                 
@@ -959,9 +1157,9 @@
     <button class="submit-button" type="button" style="display: block; margin: 5vh auto 0;" onclick="downloadAllTables();">Download Report
     </button>
 
-    <script src="MultiFile Uploading_files/xlsx.full.min.js.download"></script>
-    <script src="MultiFile Uploading_files/xlsx.full.min.js(1).download"></script>
-    <script src="MultiFile Uploading_files/xlsx.full.min.js.map"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.0/xlsx.full.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.17.0/xlsx.full.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.17.0/xlsx.full.min.js.map"></script>
 
     <script>
         function download_table_as_xlsx(table_id, data, section_heading) {
@@ -1078,6 +1276,18 @@
         if (selectedTable !== 'file-info-table') {
             document.getElementById('link-info-table').style.display = 'table';
             document.getElementById('download-info-table').style.display = 'table';
+        }
+
+        var headings = document.querySelectorAll('h2');
+        headings.forEach(function (heading) {
+            heading.style.display = 'none';
+        });
+
+        // If a table other than "All" is selected, show the corresponding table and its heading
+        if (selectedTable) {
+            headings.forEach(function (heading) {
+                heading.style.display = 'block';
+            });
         }
     }
 </script>
@@ -1228,27 +1438,5 @@
     });
 </script>
 
-
-
-
-<script src="chrome-extension://ebgofhigpedaepplnmglnedbfjemmpnh/inject.js"></script></body><grammarly-desktop-integration data-grammarly-shadow-root="true"><template shadowrootmode="open"><style>
-      div.grammarly-desktop-integration {
-        position: absolute;
-        width: 1px;
-        height: 1px;
-        padding: 0;
-        margin: -1px;
-        overflow: hidden;
-        clip: rect(0, 0, 0, 0);
-        white-space: nowrap;
-        border: 0;
-        -moz-user-select: none;
-        -webkit-user-select: none;
-        -ms-user-select:none;
-        user-select:none;
-      }
-
-      div.grammarly-desktop-integration:before {
-        content: attr(data-content);
-      }
-    </style><div aria-label="grammarly-integration" role="group" tabindex="-1" class="grammarly-desktop-integration" data-content="{&quot;mode&quot;:&quot;full&quot;,&quot;isActive&quot;:true,&quot;isUserDisabled&quot;:false}"></div></template></grammarly-desktop-integration><div id="lumaly-shadowroot"><template shadowrootmode="open"><style>/*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */html{line-height:1.15;-webkit-text-size-adjust:100%}body{margin:0}main{display:block}h1{font-size:2em;margin:.67em 0}hr{box-sizing:content-box;height:0;overflow:visible}pre{font-family:monospace,monospace;font-size:1em}a{background-color:rgba(0,0,0,0)}abbr[title]{border-bottom:none;text-decoration:underline;text-decoration:underline dotted}b,strong{font-weight:bolder}code,kbd,samp{font-family:monospace,monospace;font-size:1em}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-0.25em}sup{top:-0.5em}img{border-style:none}button,input,optgroup,select,textarea{font-family:inherit;font-size:100%;line-height:1.15;margin:0}button,input{overflow:visible}button,select{text-transform:none}button,[type=button],[type=reset],[type=submit]{-webkit-appearance:button}button::-moz-focus-inner,[type=button]::-moz-focus-inner,[type=reset]::-moz-focus-inner,[type=submit]::-moz-focus-inner{border-style:none;padding:0}button:-moz-focusring,[type=button]:-moz-focusring,[type=reset]:-moz-focusring,[type=submit]:-moz-focusring{outline:1px dotted ButtonText}fieldset{padding:.35em .75em .625em}legend{box-sizing:border-box;color:inherit;display:table;max-width:100%;padding:0;white-space:normal}progress{vertical-align:baseline}textarea{overflow:auto}[type=checkbox],[type=radio]{box-sizing:border-box;padding:0}[type=number]::-webkit-inner-spin-button,[type=number]::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}[type=search]::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}details{display:block}summary{display:list-item}template{display:none}[hidden]{display:none}*::before,*::after{box-sizing:border-box}a{text-decoration:none;color:inherit;cursor:pointer}button{background-color:rgba(0,0,0,0);color:inherit;border-width:0;padding:0;cursor:pointer}figure{margin:0}input::-moz-focus-inner{border:0;padding:0;margin:0}ul,ol,dd{margin:0;padding:0;list-style:none}h1,h2,h3,h4,h5,h6{margin:0;font-size:inherit;font-weight:inherit}p{margin:0}body{font-family:"euclid",sans-serif}*{box-sizing:border-box}.display-none{display:none !important}.overflow-hidden{overflow:hidden !important}button,button:hover,a,a:hover{transition:.3s}*{box-sizing:border-box}.flex,.flex-a-c-j-c,.flex-column-a-c-j-c,.flex-a-c-j-sb,.flex-column-a-c-j-sb,.flex-j-sb,.flex-a-st-j-c,.flex-a-st-j-e,.flex-a-st-j-st,.flex-a-st,.flex-column-a-st,.flex-j-st,.flex-j-c,.flex-column-j-c,.flex-a-c,.flex-a-c-j-st,.flex-column{display:flex}.flex-column{flex-direction:column}.flex-a-c,.flex-a-c-j-st{align-items:center}.flex-j-c,.flex-column-j-c{justify-content:center}.flex-j-st{justify-content:start}.flex-a-st,.flex-column-a-st{align-items:start}.flex-a-st-j-st{align-items:start;justify-content:start}.flex-a-st-j-e{align-items:start;justify-content:end}.flex-a-st-j-c{align-items:start;justify-content:center}.flex-j-sb{justify-content:space-between}.flex-a-c-j-sb,.flex-column-a-c-j-sb{align-items:center;justify-content:space-between}.flex-a-c-j-c,.flex-column-a-c-j-c{align-items:center;justify-content:center}.flex-a-c-j-st{justify-content:flex-start}.flex-column-a-c-j-c{flex-direction:column}.flex-column-j-c{flex-direction:column}.flex-column-a-st{flex-direction:column}.flex-column-a-c-j-sb{flex-direction:column}.flex-wrap{flex-wrap:wrap}.text-xxl,.text-xl,.text-lg,.text-md,.text-smd,.text-sm,.text-xs,.text-xxs{font-family:"euclid",sans-serif;font-weight:400;text-align:center;color:#151515}.text-xxl{font-size:44px;line-height:52.8px}.text-xl{font-size:36px;line-height:28.8px}.text-lg{font-size:30px;line-height:24px}.text-smd{font-size:20px;line-height:24px}.text-md{font-size:24px;line-height:21.6px}.text-sm{font-size:16px;line-height:20.8px}.text-xs{font-size:14px;line-height:18.2px}.text-xxs{font-size:12px;line-height:15.6px}.text-medium-gray{color:#99a2ad}.text-purple{color:#6f48ff}.text-green{color:#34a60c}.title{font-size:24px;line-height:28.8px}.title-xsm{font-size:18px;line-height:21.6px}.text-medium{font-weight:500}.loading-spinner-wrapper{position:fixed;top:60px;height:480px;right:0;left:0;z-index:99;background-color:#fff}.loading-spinner-wrapper.hidden{opacity:0;z-index:-1;transition:all .3s linear .1s}.loading-spinner-wrapper.visible{opacity:1;z-index:99}.loading-spinner{display:inline-block;width:30px;height:30px;animation-name:rotate-forever;animation-duration:.75s;animation-timing-function:linear;animation-iteration-count:infinite;border:8px solid #6f48ff;border-right-color:rgba(0,0,0,0);border-radius:50%}@keyframes rotate-forever{0%{transform:rotate(0deg)}100%{transform:rotate(360deg)}}.card{background-color:#fff;box-shadow:5px 5px 20px rgba(0,0,0,.12);border-radius:10px;border:.5px solid #f3f4f8;padding:21px 22px;width:100%}.clipped-card{filter:drop-shadow(5px 5px 10px rgba(0, 0, 0, 0.12))}.clipped-card-content{min-height:180px;padding:21px 22px;border-radius:10px;border:.5px solid #f3f4f8;background:#fff;clip-path:polygon(100% 50%, 100% 100%, 0 100%, 0 0, 100% 0, 100% 50%, calc(10px + 0%) calc(0px + 50%), calc(9.9503077537px + 0%) calc(-0.995678466px + 50%), calc(9.8017248785px + 0%) calc(-1.981461432px + 50%), calc(9.5557280579px + 0%) calc(-2.9475517441px + 50%), calc(9.2147621187px + 0%) calc(-3.8843479627px + 50%), calc(8.7822157337px + 0%) calc(-4.7825397862px + 50%), calc(8.2623877432px + 0%) calc(-5.6332005806px + 50%), calc(7.6604444312px + 0%) calc(-6.4278760969px + 50%), calc(6.9823681809px + 0%) calc(-7.1586684926px + 50%), calc(6.2348980186px + 0%) calc(-7.8183148247px + 50%), calc(5.4254626387px + 0%) calc(-8.4002592315px + 50%), calc(4.5621065735px + 0%) calc(-8.8987180881px + 50%), calc(3.6534102437px + 0%) calc(-9.3087374864px + 50%), calc(2.7084046814px + 0%) calc(-9.6262424695px + 50%), calc(1.7364817767px + 0%) calc(-9.8480775301px + 50%), calc(0.7473009359px + 0%) calc(-9.9720379718px + 50%), calc(-0.2493069174px + 0%) calc(-9.99689182px + 50%), calc(-1.2434370465px + 0%) calc(-9.922392066px + 50%), calc(-2.2252093396px + 0%) calc(-9.7492791218px + 50%), calc(-3.1848665025px + 0%) calc(-9.4792734617px + 50%), calc(-4.1128710313px + 0%) calc(-9.1150585231px + 50%), calc(-5px + 0%) calc(-8.6602540378px + 50%), calc(-5.8374367223px + 0%) calc(-8.1193800572px + 50%), calc(-6.616858376px + 0%) calc(-7.4978120297px + 50%), calc(-7.3305187183px + 0%) calc(-6.8017273777px + 50%), calc(-7.9713250722px + 0%) calc(-6.0380441033px + 50%), calc(-8.5329088163px + 0%) calc(-5.2143520338px + 50%), calc(-9.009688679px + 0%) calc(-4.3388373912px + 50%), calc(-9.3969262079px + 0%) calc(-3.4202014333px + 50%), calc(-9.6907728623px + 0%) calc(-2.4675739769px + 50%), calc(-9.8883082623px + 0%) calc(-1.4904226618px + 50%), calc(-9.9875692122px + 0%) calc(-0.4984588566px + 50%), calc(-9.9875692122px + 0%) calc(0.4984588566px + 50%), calc(-9.8883082623px + 0%) calc(1.4904226618px + 50%), calc(-9.6907728623px + 0%) calc(2.4675739769px + 50%), calc(-9.3969262079px + 0%) calc(3.4202014333px + 50%), calc(-9.009688679px + 0%) calc(4.3388373912px + 50%), calc(-8.5329088163px + 0%) calc(5.2143520338px + 50%), calc(-7.9713250722px + 0%) calc(6.0380441033px + 50%), calc(-7.3305187183px + 0%) calc(6.8017273777px + 50%), calc(-6.616858376px + 0%) calc(7.4978120297px + 50%), calc(-5.8374367223px + 0%) calc(8.1193800572px + 50%), calc(-5px + 0%) calc(8.6602540378px + 50%), calc(-4.1128710313px + 0%) calc(9.1150585231px + 50%), calc(-3.1848665025px + 0%) calc(9.4792734617px + 50%), calc(-2.2252093396px + 0%) calc(9.7492791218px + 50%), calc(-1.2434370465px + 0%) calc(9.922392066px + 50%), calc(-0.2493069174px + 0%) calc(9.99689182px + 50%), calc(0.7473009359px + 0%) calc(9.9720379718px + 50%), calc(1.7364817767px + 0%) calc(9.8480775301px + 50%), calc(2.7084046814px + 0%) calc(9.6262424695px + 50%), calc(3.6534102437px + 0%) calc(9.3087374864px + 50%), calc(4.5621065735px + 0%) calc(8.8987180881px + 50%), calc(5.4254626387px + 0%) calc(8.4002592315px + 50%), calc(6.2348980186px + 0%) calc(7.8183148247px + 50%), calc(6.9823681809px + 0%) calc(7.1586684926px + 50%), calc(7.6604444312px + 0%) calc(6.4278760969px + 50%), calc(8.2623877432px + 0%) calc(5.6332005806px + 50%), calc(8.7822157337px + 0%) calc(4.7825397862px + 50%), calc(9.2147621187px + 0%) calc(3.8843479627px + 50%), calc(9.5557280579px + 0%) calc(2.9475517441px + 50%), calc(9.8017248785px + 0%) calc(1.981461432px + 50%), calc(9.9503077537px + 0%) calc(0.995678466px + 50%), calc(10px + 0%) calc(0px + 50%), calc(10px + 100%) calc(0px + 50%), calc(9.9503077537px + 100%) calc(-0.995678466px + 50%), calc(9.8017248785px + 100%) calc(-1.981461432px + 50%), calc(9.5557280579px + 100%) calc(-2.9475517441px + 50%), calc(9.2147621187px + 100%) calc(-3.8843479627px + 50%), calc(8.7822157337px + 100%) calc(-4.7825397862px + 50%), calc(8.2623877432px + 100%) calc(-5.6332005806px + 50%), calc(7.6604444312px + 100%) calc(-6.4278760969px + 50%), calc(6.9823681809px + 100%) calc(-7.1586684926px + 50%), calc(6.2348980186px + 100%) calc(-7.8183148247px + 50%), calc(5.4254626387px + 100%) calc(-8.4002592315px + 50%), calc(4.5621065735px + 100%) calc(-8.8987180881px + 50%), calc(3.6534102437px + 100%) calc(-9.3087374864px + 50%), calc(2.7084046814px + 100%) calc(-9.6262424695px + 50%), calc(1.7364817767px + 100%) calc(-9.8480775301px + 50%), calc(0.7473009359px + 100%) calc(-9.9720379718px + 50%), calc(-0.2493069174px + 100%) calc(-9.99689182px + 50%), calc(-1.2434370465px + 100%) calc(-9.922392066px + 50%), calc(-2.2252093396px + 100%) calc(-9.7492791218px + 50%), calc(-3.1848665025px + 100%) calc(-9.4792734617px + 50%), calc(-4.1128710313px + 100%) calc(-9.1150585231px + 50%), calc(-5px + 100%) calc(-8.6602540378px + 50%), calc(-5.8374367223px + 100%) calc(-8.1193800572px + 50%), calc(-6.616858376px + 100%) calc(-7.4978120297px + 50%), calc(-7.3305187183px + 100%) calc(-6.8017273777px + 50%), calc(-7.9713250722px + 100%) calc(-6.0380441033px + 50%), calc(-8.5329088163px + 100%) calc(-5.2143520338px + 50%), calc(-9.009688679px + 100%) calc(-4.3388373912px + 50%), calc(-9.3969262079px + 100%) calc(-3.4202014333px + 50%), calc(-9.6907728623px + 100%) calc(-2.4675739769px + 50%), calc(-9.8883082623px + 100%) calc(-1.4904226618px + 50%), calc(-9.9875692122px + 100%) calc(-0.4984588566px + 50%), calc(-9.9875692122px + 100%) calc(0.4984588566px + 50%), calc(-9.8883082623px + 100%) calc(1.4904226618px + 50%), calc(-9.6907728623px + 100%) calc(2.4675739769px + 50%), calc(-9.3969262079px + 100%) calc(3.4202014333px + 50%), calc(-9.009688679px + 100%) calc(4.3388373912px + 50%), calc(-8.5329088163px + 100%) calc(5.2143520338px + 50%), calc(-7.9713250722px + 100%) calc(6.0380441033px + 50%), calc(-7.3305187183px + 100%) calc(6.8017273777px + 50%), calc(-6.616858376px + 100%) calc(7.4978120297px + 50%), calc(-5.8374367223px + 100%) calc(8.1193800572px + 50%), calc(-5px + 100%) calc(8.6602540378px + 50%), calc(-4.1128710313px + 100%) calc(9.1150585231px + 50%), calc(-3.1848665025px + 100%) calc(9.4792734617px + 50%), calc(-2.2252093396px + 100%) calc(9.7492791218px + 50%), calc(-1.2434370465px + 100%) calc(9.922392066px + 50%), calc(-0.2493069174px + 100%) calc(9.99689182px + 50%), calc(0.7473009359px + 100%) calc(9.9720379718px + 50%), calc(1.7364817767px + 100%) calc(9.8480775301px + 50%), calc(2.7084046814px + 100%) calc(9.6262424695px + 50%), calc(3.6534102437px + 100%) calc(9.3087374864px + 50%), calc(4.5621065735px + 100%) calc(8.8987180881px + 50%), calc(5.4254626387px + 100%) calc(8.4002592315px + 50%), calc(6.2348980186px + 100%) calc(7.8183148247px + 50%), calc(6.9823681809px + 100%) calc(7.1586684926px + 50%), calc(7.6604444312px + 100%) calc(6.4278760969px + 50%), calc(8.2623877432px + 100%) calc(5.6332005806px + 50%), calc(8.7822157337px + 100%) calc(4.7825397862px + 50%), calc(9.2147621187px + 100%) calc(3.8843479627px + 50%), calc(9.5557280579px + 100%) calc(2.9475517441px + 50%), calc(9.8017248785px + 100%) calc(1.981461432px + 50%), calc(9.9503077537px + 100%) calc(0.995678466px + 50%), calc(10px + 100%) calc(0px + 50%))}.coupon-card{margin:30px 0;transition:all .25s}.coupon-card:hover{filter:drop-shadow(10px 10px 10px rgba(0, 0, 0, 0.12))}.coupon-card-shop-logo{max-width:20%}.coupon-card-discount{font-size:24px;line-height:28.8px}.coupon-card-description{margin:10px 0;text-align:left}.coupon-card-expiration{color:#99a2ad;text-align:left;margin-bottom:10px}.coupon-card-expiration svg{margin-right:6px}.coupon-card-expiration-urgent{color:#f76403}.coupon-copy-card-input{font-size:12px;max-width:53%;height:30px;padding:6px 11px;font-weight:300;overflow:hidden;text-transform:uppercase;text-overflow:ellipsis;color:#99a2ad;border:1px solid #99a2ad;border-radius:4px;white-space:nowrap}.coupon-copy-card-copy-label{font-size:12px;line-height:14.4px}.coupon-copy-card-copy{text-decoration:underline;transition:all .2s linear;font-weight:500;cursor:pointer}.coupon-copy-card-copy:hover{color:#6f48ff}.coupon-copy-card-copied{color:#34a60c}.button{width:100%;font-size:16px;height:50px;cursor:pointer;border-radius:25px;outline:none;line-height:15px;display:table;margin:20px auto;transition:.3s}.button:not(.secondary){border:0;color:#fff;background-color:#6f48ff}.button:not(.secondary):hover{box-shadow:5px 7px 12px rgba(111,72,255,.21)}.button.secondary{color:#151515;background-color:#fff;border:1px solid #151515}.button.secondary:hover{box-shadow:5px 7px 12px rgba(21,21,21,.21)}.button:disabled{opacity:.8;cursor:initial}.button.small{height:40px;line-height:10px;font-size:14px}.button.font-weight-bold{font-weight:600}.side-popup-wrapper.with-overlay:after{content:"";display:block;position:fixed;top:0;left:0;bottom:0;right:0;background:rgba(0,0,0,.4);z-index:10000000;opacity:1;transition:all .3s linear}.side-popup{font-family:"euclid";font-size:14px;position:fixed;z-index:2147483647;top:16px;right:16px;width:320px;transition:box-shadow .25s ease;text-align:center;background-color:#fff;box-shadow:10px 10px 35px rgba(0,0,0,.17);min-height:341px;border-radius:20px;letter-spacing:0}.side-popup.animate-right{right:360px}.popup-close{width:40px;height:40px;cursor:pointer;position:absolute;right:8px;top:8px;z-index:1}.popup-cancel-button{cursor:pointer;text-decoration-line:underline;font-weight:500}.popup-body{padding:35px 20px 20px;min-height:271px;overflow:hidden}.popup-body .button{font-size:15px;font-weight:600}.popup-footer{border-top:1px solid #e9e5fe;min-height:65px;padding:20px 20px}.popup-footer svg{margin-left:auto}.popup-description,.popup-footer-text{color:#99a2ad;line-height:18.2px;margin:0}.popup-title{margin:5px auto 20px;line-height:28.8px;font-weight:500;font-size:22px}.popup-image{width:180px;height:180px;margin:-5px auto 0}.popup-image img{max-width:100%}.header-logo{width:50px;position:absolute;left:20px;top:22px}.progress-bar{position:relative;width:100%;overflow:hidden;height:23px;border-radius:10px;background:#e9e5fe}.progress-bar span{display:block;height:23px;transition:width 1s linear;background:linear-gradient(270deg, #6f48ff 22.13%, rgba(111, 72, 255, 0) 113.51%)}.cashback{width:100%;padding:10px 10px 0px;margin-bottom:-5px}.cashback-with-border{border-top:1px solid #e9e5fe;padding:19px 10px 15px}.cashback-label{margin-left:10px}.cashback-value{font-size:16px;line-height:18.2px}.average-prefix{font-size:10px;margin-right:3px}.cashback-popup-header{margin-bottom:10px}.cashback-popup-header img{max-width:100px}.cashback-popup-header-title{margin-left:10px;font-weight:500;text-align:left}.success-rate-content{margin:5px auto 3px}.success-rate{margin-left:10px}.try-coupons-popup-title{font-size:22px;margin-bottom:20px}.try-coupons-popup-description{margin-bottom:5px}.try-coupons-popup-image{margin-bottom:10px}.applying-popup-progress-bar{width:100%;padding:38px 22px 10px}.applied-coupon-button{margin-top:15px;margin-bottom:0}.applied-coupon-popup-results{width:100%;margin:10px 0 0;padding:5px 0 0;border-top:1px solid #e9e5fe}.applied-coupon-popup-image{width:180px;max-width:100%}.applied-coupon-popup-result-item{padding:15px 10px}.applied-coupon-popup-result-item-value{font-size:18px;line-height:21.6px;font-weight:500}.applied-coupon-popup-title{font-weight:500}.not-found-coupon-popup .popup-title{margin-bottom:24px}.not-found-coupon-popup .button{margin:24px 0}.not-found-coupon-popup .popup-cancel-button{margin-bottom:6px}.not-found-coupon-no-codes-popup .cashback-popup-header{margin:20px 0 0}.not-found-coupon-no-codes-popup .popup-title{margin-bottom:24px}.not-found-coupon-no-codes-popup .popup-description{margin-bottom:20px}.not-found-coupon-no-codes-popup .popup-cancel-button{margin-bottom:6px}.not-found-coupon-no-codes-popup .popup-image-header{margin:10px 0}.not-found-coupon-no-codes-popup .popup-image-header img{max-width:70px;padding-top:8px}.not-found-coupon-no-codes-popup .popup-image-header-title{margin-left:10px;font-weight:500;text-align:left}.not-found-coupon-no-codes-popup .cashback-popup-card{background-color:#fff;padding:10px;margin-top:20px}.not-found-coupon-no-codes-popup .plus-separator{position:relative;background:#151515;color:#fff;width:22px;height:22px;border-radius:50%;margin:10px auto 0 auto}.not-found-coupon-no-codes-popup .plus-separator::after{position:absolute;z-index:-1;content:"";background-color:#f8f7ff;width:500px;height:350px;top:11px}.not-found-coupon-no-codes-popup .cashback-popup .button{margin:30px 0 10px}.cashback-popup-card{box-shadow:5px 5px 20px rgba(0,0,0,.12);border-radius:6px;padding:6px 26px 17px;margin:15px 0 20px}.cashback-popup-card-title{font-size:30px;line-height:120%}.cashback-popup .button{margin-bottom:0}.cashback-popup .cashback-popup-not-logged .cashback-popup-header{margin-top:10px}.cashback-popup .cashback-popup-not-logged .button{margin:25px 0 10px}.cashback-popup .cashback-popup-not-logged .cashback-header-image{max-width:121px}.cashback-popup .cashback-popup-applied .cashback-popup-header{margin-top:15px;margin-bottom:20px}.cashback-popup .cashback-popup-applied .cashback{margin-bottom:30px}.cashback-popup-logged-description{margin-bottom:5px}.cashback-applied-badge{height:50px;width:100%;background-color:rgba(52,166,12,.1);color:#34a60c;border-radius:25px;margin:20px 0 10px;box-shadow:5px 7px 12px rgba(111,72,255,.21);font-size:15px;font-weight:600}.instruction-popup .button{margin:25px 0}.opening-extension-instruction-popup .popup-title{margin-bottom:15px}.opening-extension-instruction-popup .button{margin-bottom:10px;margin-top:30px}.opening-extension-instruction-popup .popup-image{height:112px;margin-left:30px;margin-top:-10px}.opening-extension-instruction-popup .popup-description{white-space:pre-line;margin:0 -1px}.try-coupons-again-popup .popup-title{margin-bottom:24px}.try-coupons-again-popup .button{margin-top:24px}.try-coupons-again-after-applied-popup{max-width:100%}.try-coupons-again-after-applied-popup .applied-coupon{background-color:#f3f0ff;border-radius:5px;height:50px;padding:0 20px;margin:24px 0}.try-coupons-again-after-applied-popup .applied-coupon-value{font-size:18px;font-weight:500;line-height:21.6px;overflow-x:auto;max-width:60%;white-space:nowrap}.try-coupons-again-after-applied-popup .button{margin:24px 0 6px}.partial-supported-try-coupons-popup .button{margin-top:30px;margin-bottom:10px}.partial-supported-try-coupons-popup .title{font-size:22px;font-weight:500;margin:3px 0 20px}.partial-supported-coupons-popup .side-popup{width:345px}.partial-supported-coupons-popup-content{overflow-y:auto;max-height:50vh;margin:0 -20px -20px;padding:0 20px 20px}.partial-supported-coupons-popup-content .popup-description{margin-bottom:3px}.try-coupons-home-page-popup-wrapper .side-popup{width:440px;min-height:210px;border-radius:10px}.try-coupons-home-page-popup-wrapper .header-logo{width:58px}.try-coupons-home-page-popup-wrapper .popup-body{min-height:210px;padding:40px 20px 20px;overflow:initial}.try-coupons-home-page-popup .popup-description{padding-right:20px}.try-coupons-home-page-popup .sun-image{width:120px;min-width:120px;height:120px;margin-top:8px}.try-coupons-home-page-popup .sun-image img{max-width:100%}.try-coupons-home-page-popup .popup-title{margin:0 0 15px;text-align:left}.try-coupons-home-page-popup .button{margin:0 20px 0 0;font-size:12px;line-height:15.6px;width:auto;height:45px;padding:0 20px}.try-coupons-home-page-popup .open-instruction-list{left:-20px}.try-coupons-home-page-popup-body{text-align:left;padding-left:20px}.try-coupons-home-page-popup-footer{padding:20px 0 5px}.open-instruction{position:relative}.open-instruction .popup-cancel-button{transition:all .2s}.open-instruction:hover .popup-cancel-button{color:#6f48ff}.open-instruction:hover .open-instruction-list{opacity:1;z-index:1;pointer-events:auto}.open-instruction-list{position:absolute;opacity:0;z-index:-1;pointer-events:none;transition:all .2s;top:100%;text-align:left;min-width:136px;padding:15px;cursor:auto;border:.5px solid #f3f4f8;border-radius:10px;background:#fff;box-shadow:5px 5px 20px rgba(0,0,0,.12);white-space:nowrap}.open-instruction-list li{font-size:14px;line-height:28.8px;transition:color .5s;cursor:pointer}.open-instruction-list li:hover{color:#8d6ffb}.amazon-instruction-popup{margin-top:-11px}.amazon-instruction-popup .amazon-instruction-popup-images{margin-bottom:15px}.amazon-instruction-popup .instruction-logo-image{width:48px;height:48px;border-radius:10px}.amazon-instruction-popup .amazon-logo{box-shadow:5px 7px 12px rgba(133,133,133,.21)}.amazon-instruction-popup .amazon-logo img{width:36px}.amazon-instruction-popup .lumaly-logo{margin-left:10px;box-shadow:5px 7px 12px rgba(111,72,255,.21)}.amazon-instruction-popup .lumaly-logo img{max-width:100%}.amazon-instruction-popup .popup-title{margin-top:0px;font-size:24px}.amazon-instruction-popup .popup-description{white-space:pre-line}.amazon-instruction-popup .button{box-shadow:5px 7px 12px rgba(111,72,255,.21);font-weight:600;font-size:15px}.amazon-instruction-popup .button:hover{box-shadow:5px 7px 12px rgba(111,72,255,.4)}.try-coupons-no-codes-popup .popup-title{margin-top:15px}.try-coupons-no-codes-popup .button{margin:25px auto 8px}.try-coupons-no-codes-popup.with-cashback .button{margin-bottom:20px}</style><div id="lumaly-root"><div id="extra-popups"></div><div id="popups"></div></div></template></div></html>
+</body>
+</html>
