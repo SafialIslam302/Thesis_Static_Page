@@ -1147,6 +1147,64 @@
     document.getElementById("submitBtn").addEventListener("click", handleFormSubmission);
 </script>
 
+    <script>
+    // Store the selected serial number
+    var selectedSerialNumber = null;
+
+    // Function to handle the serial number click event
+    function handleSerialNumberClick(serialNumber) {
+        // Store the selected serial number
+        selectedSerialNumber = serialNumber;
+
+        // Update the Link Information table
+        updateLinkInformationTable();
+
+        // Update the Download Information table
+        updateDownloadInformationTable();
+    }
+
+    // Function to update the Link Information table based on the selected serial number
+    function updateLinkInformationTable() {
+        // Get all rows in the Link Information table
+        var linkRows = document.querySelectorAll('#link-info-table tbody tr');
+
+        // Loop through all rows and hide/show them based on the selected serial number
+        linkRows.forEach(function (row) {
+            var rowSerialNumber = row.querySelector('td:first-child').innerText.trim();
+            if (rowSerialNumber === selectedSerialNumber) {
+                row.style.display = 'table-row';
+            } else {
+                row.style.display = 'none';
+            }
+        });
+    }
+
+    // Function to update the Download Information table based on the selected serial number
+    function updateDownloadInformationTable() {
+        // Get all rows in the Download Information table
+        var downloadRows = document.querySelectorAll('#download-info-table tbody tr');
+
+        // Loop through all rows and hide/show them based on the selected serial number
+        downloadRows.forEach(function (row) {
+            var rowSerialNumber = row.querySelector('td:first-child').innerText.trim();
+            if (rowSerialNumber === selectedSerialNumber) {
+                row.style.display = 'table-row';
+            } else {
+                row.style.display = 'none';
+            }
+        });
+    }
+
+    // Attach click event listeners to the serial number cells in the File Information table
+    var serialNumberCells = document.querySelectorAll('#file-info-table tbody td:first-child');
+    serialNumberCells.forEach(function (cell) {
+        cell.addEventListener('click', function () {
+            var serialNumber = cell.innerText.trim();
+            handleSerialNumberClick(serialNumber);
+        });
+    });
+</script>
+
     
 </body>
 </html>
