@@ -1027,6 +1027,67 @@
     </script>
 
 </div>
+
+    <script>
+    // Function to toggle the visibility of Table 2 and Table 3 based on the selected option
+    function toggleTables() {
+        var selectedTable = document.getElementById('serialNumberDropdown').value;
+
+        // Show Table 1 (Always displayed)
+        document.getElementById('file-info-table').style.display = 'table';
+
+        // Hide Table 2 and Table 3
+        document.getElementById('link-info-table').style.display = 'none';
+        document.getElementById('download-info-table').style.display = 'none';
+
+        // If a table other than Table 1 is selected, show Table 2 and Table 3
+        if (selectedTable !== 'file-info-table') {
+            document.getElementById('link-info-table').style.display = 'table';
+            document.getElementById('download-info-table').style.display = 'table';
+        }
+
+        var headings = document.querySelectorAll('h2');
+        headings.forEach(function (heading) {
+            heading.style.display = 'none';
+        });
+
+        // If a table other than "All" is selected, show the corresponding table and its heading
+        if (selectedTable) {
+            headings.forEach(function (heading) {
+                heading.style.display = 'block';
+            });
+        }
+    }
+</script>
+
+<script>
+    // Function to update the table based on the selected serial number
+    function updateTable(tableId) {
+        var selectedSerialNumber = document.getElementById('serialNumberDropdown').value;
+        var rows = document.querySelectorAll('#' + tableId + ' tbody tr');
+        var rowsToShow = new Set();
+
+        rows.forEach(function (row, rowIndex) {
+            var rowSerialNumber = row.querySelector('td:first-child').innerText.trim();
+            if (rowSerialNumber === selectedSerialNumber || selectedSerialNumber === 'All') {
+                var rowspan = parseInt(row.querySelector('td:first-child').getAttribute('rowspan')) || 1;
+                for (var i = rowIndex; i < rowIndex + rowspan; i++) {
+                    rowsToShow.add(i);
+                }
+            }
+        });
+
+        rows.forEach(function (row, rowIndex) {
+            if (rowsToShow.has(rowIndex)) {
+                row.style.display = 'table-row';
+            } else {
+                row.style.display = 'none';
+            }
+        });
+    }
+</script>
+
+    
 </body>
 </html>
 
