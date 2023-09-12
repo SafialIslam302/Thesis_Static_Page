@@ -265,3 +265,132 @@ tbody tr:nth-child(even) {
 tbody tr:hover {
     background-color: #D6EAF8;
 }
+
+.header-row {
+    background-color: #ddd;
+}
+
+/* Style for the select element (hidden) */
+#serialNumberDropdown {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #3498db;
+    border-radius: 5px;
+    background-color: #fff;
+    color: #333;
+    cursor: pointer;
+    width: 70px;
+}
+
+/* Style for the dropdown arrow */
+#serialNumberDropdown::after {
+    content: "\25BC"; /* Downward-pointing arrow character */
+    font-size: 14px;
+    color: #333;
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+}
+
+/* Hover effect for the dropdown container */
+.dropdown-container:hover #serialNumberDropdown {
+    border-color: #2980b9;
+}
+
+/* Style for the dropdown options container */
+.select-options {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    background-color: #fff;
+    border: 1px solid #3498db;
+    border-top: none;
+    border-radius: 0 0 5px 5px;
+    display: none;
+}
+
+/* Style for the dropdown options */
+#serialNumberDropdown option {
+    padding: 10px;
+    font-size: 16px;
+    color: #333;
+    cursor: pointer;
+    border-bottom: 1px solid #3498db;
+    transition: background-color 0.3s;
+}
+
+/* Style for the selected option */
+#serialNumberDropdown option:checked {
+    background-color: #3498db;
+    color: #fff;
+}
+
+/* Hover effect for the dropdown options */
+#serialNumberDropdown option:hover {
+    background-color: #2980b9;
+    color: #fff;
+}
+
+/* Style for selected option in the dropdown menu */
+#serialNumberDropdown option:checked {
+    background-color: #3498db;
+    color: #fff;
+}
+
+/* Style for the selected option in the dropdown menu when hovering */
+#serialNumberDropdown option:checked:hover {
+    background-color: #2980b9;
+}
+
+.container-hover {
+    position: relative;
+    display: inline-block;
+}
+
+.image {
+    opacity: 1;
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: .5s ease;
+    backface-visibility: hidden;
+}
+
+.container-hover:hover .image {
+    opacity: 0.5; /* Change the opacity of the image on hover */
+}
+
+/* Style for the text displayed on hover */
+.container-hover .image:hover {
+    opacity: 1; /* Show the text when the image is hovered */
+}
+
+.text {
+    background-color: #2980b9;
+    color: white;
+    font-size: 20px;
+    margin-left: 90px;
+    width: 250px;
+    height: 50px;
+}
+
+.middle {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.container-hover:hover .middle {
+    opacity: 1; /* Show the text on hover */
+}
