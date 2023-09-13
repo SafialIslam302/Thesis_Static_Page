@@ -19,6 +19,22 @@ form {
     text-align: center;
 }
 
+.table-scroll-container {
+    max-height: 400px; /* Adjust the height as needed */
+    overflow-y: auto; /* Add vertical scroll bar when content overflows */
+}
+
+/* Optional: Style the table header to make it fixed */
+.table-scroll-container table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.table-scroll-container table thead {
+    position: sticky;
+    top: 0;
+}
+
 .container {
     background-color: #EBF5FB;
     border: 1px solid #e0e0e0;
