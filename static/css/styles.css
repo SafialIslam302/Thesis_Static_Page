@@ -19,6 +19,19 @@ form {
     text-align: center;
 }
 
+a {
+    color: blue; /* Set the link color to blue */
+    text-decoration: none; /* Remove the underline from links */
+}
+
+a:hover {
+    text-decoration: underline; /* Add underline on hover (optional) */
+}
+
+a:visited {
+    color: blue; /* Set the visited link color to blue */
+}
+
 .table-scroll-container {
     max-height: 400px; /* Adjust the height as needed */
     overflow-y: auto; /* Add vertical scroll bar when content overflows */
