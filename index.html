@@ -824,21 +824,23 @@
 
 
 <script>
-    // Function to toggle the visibility of Table 2 and Table 3 based on the selected option
+    // Function to toggle the visibility of Table 2, Table 3 and Table 4 based on the selected option
     function toggleTables() {
         var selectedTable = document.getElementById('serialNumberDropdown').value;
 
         // Show Table 1 (Always displayed)
         document.getElementById('file-info-table').style.display = 'table';
 
-        // Hide Table 2 and Table 3
+        // Hide Table 2, Table 3 and Table 4
         document.getElementById('link-info-table').style.display = 'none';
         document.getElementById('download-info-table').style.display = 'none';
+        document.getElementById('code-info-table').style.display = 'none';
 
-        // If a table other than Table 1 is selected, show Table 2 and Table 3
+        // If a table other than Table 1 is selected, show Table 2, Table 3 and Table 4
         if (selectedTable !== 'file-info-table') {
             document.getElementById('link-info-table').style.display = 'table';
             document.getElementById('download-info-table').style.display = 'table';
+            document.getElementById('code-info-table').style.display = 'table';
         }
 
         var headings = document.querySelectorAll('h2');
