@@ -19,35 +19,6 @@ form {
     text-align: center;
 }
 
-a {
-    color: blue; /* Set the link color to blue */
-    text-decoration: none; /* Remove the underline from links */
-}
-
-a:hover {
-    text-decoration: underline; /* Add underline on hover (optional) */
-}
-
-a:visited {
-    color: blue; /* Set the visited link color to blue */
-}
-
-.table-scroll-container {
-    max-height: 400px; /* Adjust the height as needed */
-    overflow-y: auto; /* Add vertical scroll bar when content overflows */
-}
-
-/* Optional: Style the table header to make it fixed */
-.table-scroll-container table {
-    width: 100%;
-    border-collapse: collapse;
-}
-
-.table-scroll-container table thead {
-    position: sticky;
-    top: 0;
-}
-
 .container {
     background-color: #EBF5FB;
     border: 1px solid #e0e0e0;
@@ -261,6 +232,21 @@ table {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
+.table-scroll-container {
+    max-height: 400px; /* Adjust the height as needed */
+    overflow-y: auto; /* Add vertical scroll bar when content overflows */
+}
+
+/* Optional: Style the table header to make it fixed */
+.table-scroll-container table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.table-scroll-container table thead {
+    position: sticky;
+    top: 0;
+}
 
 /* Add border and padding to table cells */
 table, th, td {
@@ -279,6 +265,19 @@ thead {
 th {
     font-weight: bold;
     text-align: center;
+}
+
+a {
+    color: blue; /* Set the link color to blue */
+    text-decoration: none; /* Remove the underline from links */
+}
+
+a:hover {
+    text-decoration: underline; /* Add underline on hover (optional) */
+}
+
+a:visited {
+    color: blue; /* Set the visited link color to blue */
 }
 
 /* Alternate row colors for better readability */
@@ -375,4 +374,60 @@ tbody tr:hover {
 /* Style for the selected option in the dropdown menu when hovering */
 #serialNumberDropdown option:checked:hover {
     background-color: #2980b9;
+}
+
+p {
+    font-size: 17px;
+    align-items: center;
+}
+
+.box a {
+    display: inline-block;
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 3px;
+}
+
+.modal {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    position: fixed; /* Use fixed position to cover the entire viewport */
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    transition: all 0.4s;
+    visibility: hidden;
+    opacity: 0; /* Start with opacity set to 0 */
+    background-color: rgba(0, 0, 0, 0.5); /* Add a semi-transparent background overlay */
+    z-index: 9999; /* Ensure it's on top of other content */
+}
+
+.contents {
+    position: absolute;
+    background: white;
+    width: 1500px;
+    height: 1000px; /* Set a fixed height */
+    overflow-y: auto; /* Add a vertical scrollbar when content overflows */
+    padding: 1em 2em;
+    border-radius: 10px;
+    max-height: 80%; /* Set a maximum height as a percentage of the viewport height */
+    text-align: left; /* Align text to the left */
+    font-size: 18px; /* Adjust the font size to your preference */
+}
+
+.modal:target {
+    visibility: visible;
+    opacity: 1;
+}
+
+.modal .box-close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    color: #fe0606;
+    text-decoration: none;
+    font-size: 50px;
+    cursor: pointer; /* Add a pointer cursor to indicate it's clickable */
 }
