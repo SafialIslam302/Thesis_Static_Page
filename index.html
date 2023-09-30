@@ -26,13 +26,12 @@
     </button>
 </form>
     
-
 <div id="resultsContainer" class="container" style="display: block;">
 
     <!-- Table 1: File Information -->
-    <h2 style="display: block;">General Information</h2>
+    <h2>General Information</h2>
     <div class="table-scroll-container">
-        <table id="file-info-table" class="table-container" style="display: table;">
+        <table id="file-info-table" class="table-container">
             <thead>
             <tr>
                 <!-- Add a dropdown menu to select a serial number -->
@@ -58,7 +57,7 @@
                             <option value="8">8</option>
                         
                     </select>
-                    <img src="static/icon.png" title="Select any serial number to see the details of that paper." alt="icon" class="image" style="width: 25px; height: 25px; padding-left: 20px;"></b>
+                    <img src="/static/icon.png" title="Select any serial number to see the details of that paper." alt="icon" class="image" style="width: 25px; height: 25px; padding-left: 20px;"></b>
                 </th>
                 <th><b>Paper Title</b></th>
                 <th><b>File Path</b></th>
@@ -68,7 +67,7 @@
             </thead>
             <tbody>
             
-                <tr style="display: table-row;">
+                <tr>
                     <td style="text-align: center;">1</td>
                     <td style="padding-left: 10px;"><b>A Discriminative Model For Identifying Readers And Assessing Text Comprehension From Eye Movements</b></td>
                     <td style="padding-left: 10px;">C:\Users\safia\Documents\multifileupload\media\files\A_Discriminative_Model_for_Identifying_Readers_and_Assessing_Text_Comprehension_from_Eye_Movements.pdf</td>
@@ -84,7 +83,7 @@
                     </td>
                 </tr>
             
-                <tr style="display: table-row;">
+                <tr>
                     <td style="text-align: center;">2</td>
                     <td style="padding-left: 10px;"><b>A Generalized Theory For Full Microtremor Horizontaltovertical H V Z F Spectral Ratio Interpretation In Offshore And Onshore Environments</b></td>
                     <td style="padding-left: 10px;">C:\Users\safia\Documents\multifileupload\media\files\A_generalized_theory_for_full_microtremor_horizontal-to-vertical_H_V_z_f_spectral_ratio_interpretation_in_offshore_and_onshore_environments.pdf</td>
@@ -100,7 +99,7 @@
                     </td>
                 </tr>
             
-                <tr style="display: table-row;">
+                <tr>
                     <td style="text-align: center;">3</td>
                     <td style="padding-left: 10px;"><b>A Minimax Nearoptimal Algorithm For Adaptive Rejection Sampling</b></td>
                     <td style="padding-left: 10px;">C:\Users\safia\Documents\multifileupload\media\files\A_minimax_near-optimal_algorithm_for_adaptive_rejection_sampling.pdf</td>
@@ -116,7 +115,7 @@
                     </td>
                 </tr>
             
-                <tr style="display: table-row;">
+                <tr>
                     <td style="text-align: center;">4</td>
                     <td style="padding-left: 10px;"><b>Decompounding Discrete Distributions A Nonparametric Bayesian Approach</b></td>
                     <td style="padding-left: 10px;">C:\Users\safia\Documents\multifileupload\media\files\Decompounding_discrete_distributions_A_nonparametric_Bayesian_approach.pdf</td>
@@ -132,7 +131,7 @@
                     </td>
                 </tr>
             
-                <tr style="display: table-row;">
+                <tr>
                     <td style="text-align: center;">5</td>
                     <td style="padding-left: 10px;"><b>Fokkerplanck Particle Systems For Bayesian Inference Computational Approaches</b></td>
                     <td style="padding-left: 10px;">C:\Users\safia\Documents\multifileupload\media\files\Fokker-Planck_Particle_Systems_for_Bayesian_Inference_Computational_Approaches.pdf</td>
@@ -148,7 +147,7 @@
                     </td>
                 </tr>
             
-                <tr style="display: table-row;">
+                <tr>
                     <td style="text-align: center;">6</td>
                     <td style="padding-left: 10px;"><b>Including Data Management In Research Culture Increases The Reproducibility Of Scientific Results</b></td>
                     <td style="padding-left: 10px;">C:\Users\safia\Documents\multifileupload\media\files\Including_Data_Management_in_Research_Culture_Increases_the_Reproducibility_of_Scientific_Results.pdf</td>
@@ -164,7 +163,7 @@
                     </td>
                 </tr>
             
-                <tr style="display: table-row;">
+                <tr>
                     <td style="text-align: center;">7</td>
                     <td style="padding-left: 10px;"><b>On The Relationship Between Eye Tracking Resolution And Performance Of Oculomotoric Biometric Identification</b></td>
                     <td style="padding-left: 10px;">C:\Users\safia\Documents\multifileupload\media\files\On_the_Relationship_between_Eye_Tracking_Resolution_and_Performance_of_Oculomotoric_Biometric_Identification.pdf</td>
@@ -180,7 +179,7 @@
                     </td>
                 </tr>
             
-                <tr style="display: table-row;">
+                <tr>
                     <td style="text-align: center;">8</td>
                     <td style="padding-left: 10px;"><b>Variational Bayesian Inference For Nonlinear Hawkes Process With Gaussian Process Selfeffects</b></td>
                     <td style="padding-left: 10px;">C:\Users\safia\Documents\multifileupload\media\files\Variational_Bayesian_Inference_for_Nonlinear_Hawkes_Process_with_Gaussian_Process_Self-Effects.pdf</td>
@@ -201,8 +200,8 @@
     </div>
 
     <!-- Table 2: Link Information -->
-    <h2 style="display: block;">Link Information</h2>
-    <table id="link-info-table" class="table-container" style="display: table;">
+    <h2 style="display: none;">Link Information</h2>
+    <table id="link-info-table" class="table-container" style="display: none;">
         <thead>
         <tr>
             <th><b>Serial Number</b></th>
@@ -213,7 +212,7 @@
         </thead>
         <tbody>
         
-            <tr style="display: table-row;">
+            <tr>
                 <td style="text-align: center;" rowspan="1">1</td>
 
                 
@@ -230,13 +229,13 @@
 
                 
                     <td style="text-align: center;">Not Found<br>
-                        <img src="static/red_cross.png" alt="Red Cross" style="width: 32px; height: 32px;"><br>
+                        <img src="/static/red_cross.png" alt="Red Cross" style="width: 32px; height: 32px;"><br>
                     </td>
                 
             
             </tr>
         
-            <tr style="display: table-row;">
+            <tr>
                 <td style="text-align: center;" rowspan="1">2</td>
 
                 
@@ -253,18 +252,18 @@
 
                 
                     <td style="text-align: center;">Not Found<br>
-                        <img src="static/red_cross.png" alt="Red Cross" style="width: 32px; height: 32px;"><br>
+                        <img src="/static/red_cross.png" alt="Red Cross" style="width: 32px; height: 32px;"><br>
                     </td>
                 
             
             </tr>
         
-            <tr style="display: table-row;">
+            <tr>
                 <td style="text-align: center;" rowspan="2">3</td>
 
                 
                     
-                        </tr><tr style="display: table-row;">
+                        </tr><tr>
                             <td><a href="https://github.com/jlamweil/NNARS" target="_blank">https://github.com/jlamweil/NNARS</a></td>
 
                             
@@ -273,7 +272,7 @@
 
                             
                                 </td><td style="text-align: center;">Github<br>
-                                    <img src="static/github.png" alt="GitHub Logo" style="width: 32px; height: 32px;">
+                                    <img src="/static/github.png" alt="GitHub Logo" style="width: 32px; height: 32px;">
                                     <br>
                                 </td>
                             
@@ -289,12 +288,12 @@
             
             
         
-            <tr style="display: table-row;">
+            <tr>
                 <td style="text-align: center;" rowspan="3">4</td>
 
                 
                     
-                        </tr><tr style="display: table-row;">
+                        </tr><tr>
                             <td><a href="https://github.com/fmeulen/Bdd" target="_blank">https://github.com/fmeulen/Bdd</a></td>
 
                             
@@ -303,7 +302,7 @@
 
                             
                                 </td><td style="text-align: center;">Github<br>
-                                    <img src="static/github.png" alt="GitHub Logo" style="width: 32px; height: 32px;">
+                                    <img src="/static/github.png" alt="GitHub Logo" style="width: 32px; height: 32px;">
                                     <br>
                                 </td>
                             
@@ -313,7 +312,7 @@
 
             
                 
-                    <tr style="display: table-row;">
+                    <tr>
                         <td><a href="https://doi.org/10.5281/zenodo.2598802" target="_blank">https://doi.org/10.5281/zenodo.2598802</a></td>
 
                         
@@ -322,7 +321,7 @@
 
                         
                             </td><td style="text-align: center;">Zenodo<br>
-                                <img src="static/zenodo.png" alt="Zenodo Logo" style="width: 52px; height: 52px;">
+                                <img src="/static/zenodo.png" alt="Zenodo Logo" style="width: 52px; height: 52px;">
                                 <br>
                             </td>
                         
@@ -336,14 +335,14 @@
             
             
         
-            <tr style="display: table-row;">
+            <tr>
                 <td style="text-align: center;" rowspan="2">5</td>
 
                 
 
             
                 
-                    </tr><tr style="display: table-row;">
+                    </tr><tr>
                         <td><a href="https://doi.org/10.5281/zenodo.4506841" target="_blank">https://doi.org/10.5281/zenodo.4506841</a></td>
 
                         
@@ -352,7 +351,7 @@
 
                         
                             </td><td style="text-align: center;">Not Found<br>
-                                <img src="static/red_cross.png" alt="Red Cross" style="width: 32px; height: 32px;"><br>
+                                <img src="/static/red_cross.png" alt="Red Cross" style="width: 32px; height: 32px;"><br>
                             </td>
                         
                     </tr>
@@ -365,14 +364,14 @@
             
             
         
-            <tr style="display: table-row;">
+            <tr>
                 <td style="text-align: center;" rowspan="6">6</td>
 
                 
 
             
                 
-                    </tr><tr style="display: table-row;">
+                    </tr><tr>
                         <td><a href="https://doi.org/10.5281/zenodo.2562268" target="_blank">https://doi.org/10.5281/zenodo.2562268</a></td>
 
                         
@@ -381,13 +380,13 @@
 
                         
                             </td><td style="text-align: center;">Zenodo<br>
-                                <img src="static/zenodo.png" alt="Zenodo Logo" style="width: 52px; height: 52px;">
+                                <img src="/static/zenodo.png" alt="Zenodo Logo" style="width: 52px; height: 52px;">
                                 <br>
                             </td>
                         
                     </tr>
                 
-                    <tr style="display: table-row;">
+                    <tr>
                         <td><a href="https://doi.org/10.5281/zenodo.6543497" target="_blank">https://doi.org/10.5281/zenodo.6543497</a></td>
 
                         
@@ -396,13 +395,13 @@
 
                         
                             </td><td style="text-align: center;">Zenodo<br>
-                                <img src="static/zenodo.png" alt="Zenodo Logo" style="width: 52px; height: 52px;">
+                                <img src="/static/zenodo.png" alt="Zenodo Logo" style="width: 52px; height: 52px;">
                                 <br>
                             </td>
                         
                     </tr>
                 
-                    <tr style="display: table-row;">
+                    <tr>
                         <td><a href="https://doi.org/10.5281/zenodo.6472827" target="_blank">https://doi.org/10.5281/zenodo.6472827</a></td>
 
                         
@@ -411,7 +410,7 @@
 
                         
                             </td><td style="text-align: center;">Zenodo<br>
-                                <img src="static/zenodo.png" alt="Zenodo Logo" style="width: 52px; height: 52px;">
+                                <img src="/static/zenodo.png" alt="Zenodo Logo" style="width: 52px; height: 52px;">
                                 <br>
                             </td>
                         
@@ -421,7 +420,7 @@
 
             
                 
-                    <tr style="display: table-row;">
+                    <tr>
                         <td><a href="https://doi.org/10.31234/osf.io/hf297" target="_blank">https://doi.org/10.31234/osf.io/hf297</a></td>
 
                         
@@ -430,12 +429,12 @@
 
                         
                             </td><td style="text-align: center;">Not Found<br>
-                                <img src="static/red_cross.png" alt="Red Cross" style="width: 32px; height: 32px;"><br>
+                                <img src="/static/red_cross.png" alt="Red Cross" style="width: 32px; height: 32px;"><br>
                             </td>
                         
                     </tr>
                 
-                    <tr style="display: table-row;">
+                    <tr>
                         <td><a href="https://osf.io/nvzhb/" target="_blank">https://osf.io/nvzhb/</a></td>
 
                         
@@ -444,7 +443,7 @@
 
                         
                             </td><td style="text-align: center;">Not Found<br>
-                                <img src="static/red_cross.png" alt="Red Cross" style="width: 32px; height: 32px;"><br>
+                                <img src="/static/red_cross.png" alt="Red Cross" style="width: 32px; height: 32px;"><br>
                             </td>
                         
                     </tr>
@@ -455,7 +454,7 @@
             
             
         
-            <tr style="display: table-row;">
+            <tr>
                 <td style="text-align: center;" rowspan="2">7</td>
 
                 
@@ -464,7 +463,7 @@
 
             
                 
-                    </tr><tr style="display: table-row;">
+                    </tr><tr>
                         <td><a href="https://osf.io/5zpvk/" target="_blank">https://osf.io/5zpvk/</a></td>
 
                         
@@ -473,7 +472,7 @@
 
                         
                             </td><td style="text-align: center;">Not Found<br>
-                                <img src="static/red_cross.png" alt="Red Cross" style="width: 32px; height: 32px;"><br>
+                                <img src="/static/red_cross.png" alt="Red Cross" style="width: 32px; height: 32px;"><br>
                             </td>
                         
                     </tr>
@@ -484,12 +483,12 @@
             
             
         
-            <tr style="display: table-row;">
+            <tr>
                 <td style="text-align: center;" rowspan="5">8</td>
 
                 
                     
-                        </tr><tr style="display: table-row;">
+                        </tr><tr>
                             <td><a href="https://github.com/" target="_blank">https://github.com/</a></td>
 
                             
@@ -498,13 +497,13 @@
 
                             
                                 </td><td style="text-align: center;">Github<br>
-                                    <img src="static/github.png" alt="GitHub Logo" style="width: 32px; height: 32px;">
+                                    <img src="/static/github.png" alt="GitHub Logo" style="width: 32px; height: 32px;">
                                     <br>
                                 </td>
                             
                         </tr>
                     
-                        <tr style="display: table-row;">
+                        <tr>
                             <td><a href="https://github.com/google/jax" target="_blank">https://github.com/google/jax</a></td>
 
                             
@@ -513,13 +512,13 @@
 
                             
                                 </td><td style="text-align: center;">Github<br>
-                                    <img src="static/github.png" alt="GitHub Logo" style="width: 32px; height: 32px;">
+                                    <img src="/static/github.png" alt="GitHub Logo" style="width: 32px; height: 32px;">
                                     <br>
                                 </td>
                             
                         </tr>
                     
-                        <tr style="display: table-row;">
+                        <tr>
                             <td><a href="https://github.com/noashin/NHGPS" target="_blank">https://github.com/noashin/NHGPS</a></td>
 
                             
@@ -528,13 +527,13 @@
 
                             
                                 </td><td style="text-align: center;">Github<br>
-                                    <img src="static/github.png" alt="GitHub Logo" style="width: 32px; height: 32px;">
+                                    <img src="/static/github.png" alt="GitHub Logo" style="width: 32px; height: 32px;">
                                     <br>
                                 </td>
                             
                         </tr>
                     
-                        <tr style="display: table-row;">
+                        <tr>
                             <td><a href="https://github.com/slinderman/pypolyagamma" target="_blank">https://github.com/slinderman/pypolyagamma</a></td>
 
                             
@@ -543,7 +542,7 @@
 
                             
                                 </td><td style="text-align: center;">Github<br>
-                                    <img src="static/github.png" alt="GitHub Logo" style="width: 32px; height: 32px;">
+                                    <img src="/static/github.png" alt="GitHub Logo" style="width: 32px; height: 32px;">
                                     <br>
                                 </td>
                             
@@ -564,8 +563,8 @@
     </table>
 
     <!-- Table 3: Download Information -->
-    <h2 style="display: block;">Download Information</h2>
-    <table id="download-info-table" class="table-container" style="display: table;">
+    <h2 style="display: none;">Download Information</h2>
+    <table id="download-info-table" class="table-container" style="display: none;">
         <thead>
         <tr>
             <th><b>Serial Number</b></th>
@@ -577,7 +576,7 @@
         </thead>
         <tbody>
         
-            <tr style="display: table-row;">
+            <tr>
                 <td style="text-align: center;" rowspan="1">1</td>
 
                 
@@ -588,18 +587,18 @@
 
             
                 <td style="text-align: center;">No Link Found<br>
-                    <img src="static/no_link.png" alt="Red Cross" style="width: 32px; height: 32px;"><br>
+                    <img src="/static/no_link.png" alt="Red Cross" style="width: 32px; height: 32px;"><br>
                 </td>
 
                 
                     <td style="text-align: center;">No Path Found<br>
-                        <img src="static/no_path.jpg" alt="Red Cross" style="width: 32px; height: 32px;"><br>
+                        <img src="/static/no_path.jpg" alt="Red Cross" style="width: 32px; height: 32px;"><br>
                     </td>
                 
 
                 
                     <td style="text-align: center;">Not Found<br>
-                        <img src="static/no_memory.png" alt="Red Cross" style="width: 32px; height: 32px;"><br>
+                        <img src="/static/no_memory.png" alt="Red Cross" style="width: 32px; height: 32px;"><br>
                     </td>
                 
 
@@ -610,7 +609,7 @@
             
             </tr>
         
-            <tr style="display: table-row;">
+            <tr>
                 <td style="text-align: center;" rowspan="1">2</td>
 
                 
@@ -621,18 +620,18 @@
 
             
                 <td style="text-align: center;">No Link Found<br>
-                    <img src="static/no_link.png" alt="Red Cross" style="width: 32px; height: 32px;"><br>
+                    <img src="/static/no_link.png" alt="Red Cross" style="width: 32px; height: 32px;"><br>
                 </td>
 
                 
                     <td style="text-align: center;">No Path Found<br>
-                        <img src="static/no_path.jpg" alt="Red Cross" style="width: 32px; height: 32px;"><br>
+                        <img src="/static/no_path.jpg" alt="Red Cross" style="width: 32px; height: 32px;"><br>
                     </td>
                 
 
                 
                     <td style="text-align: center;">Not Found<br>
-                        <img src="static/no_memory.png" alt="Red Cross" style="width: 32px; height: 32px;"><br>
+                        <img src="/static/no_memory.png" alt="Red Cross" style="width: 32px; height: 32px;"><br>
                     </td>
                 
 
@@ -643,11 +642,11 @@
             
             </tr>
         
-            <tr style="display: table-row;">
+            <tr>
                 <td style="text-align: center;" rowspan="2">3</td>
 
                 
-                    </tr><tr style="display: table-row;">
+                    </tr><tr>
                         <td><a href="https://github.com/jlamweil/NNARS" target="_blank">https://github.com/jlamweil/NNARS</a></td>
 
                         
@@ -673,11 +672,11 @@
             
             
         
-            <tr style="display: table-row;">
+            <tr>
                 <td style="text-align: center;" rowspan="3">4</td>
 
                 
-                    </tr><tr style="display: table-row;">
+                    </tr><tr>
                         <td><a href="https://github.com/fmeulen/Bdd" target="_blank">https://github.com/fmeulen/Bdd</a></td>
 
                         
@@ -699,7 +698,7 @@
             
 
             
-                <tr style="display: table-row;">
+                <tr>
                     <td><p><a href="https://doi.org/10.5281/zenodo.2598802" target="_blank">https://doi.org/10.5281/zenodo.2598802</a></p></td>
 
                     
@@ -721,7 +720,7 @@
             
             
         
-            <tr style="display: table-row;">
+            <tr>
                 <td style="text-align: center;" rowspan="1">5</td>
 
                 
@@ -732,18 +731,18 @@
 
             
                 <td style="text-align: center;">No Link Found<br>
-                    <img src="static/no_link.png" alt="Red Cross" style="width: 32px; height: 32px;"><br>
+                    <img src="/static/no_link.png" alt="Red Cross" style="width: 32px; height: 32px;"><br>
                 </td>
 
                 
                     <td style="text-align: center;">No Path Found<br>
-                        <img src="static/no_path.jpg" alt="Red Cross" style="width: 32px; height: 32px;"><br>
+                        <img src="/static/no_path.jpg" alt="Red Cross" style="width: 32px; height: 32px;"><br>
                     </td>
                 
 
                 
                     <td style="text-align: center;">Not Found<br>
-                        <img src="static/no_memory.png" alt="Red Cross" style="width: 32px; height: 32px;"><br>
+                        <img src="/static/no_memory.png" alt="Red Cross" style="width: 32px; height: 32px;"><br>
                     </td>
                 
 
@@ -754,7 +753,7 @@
             
             </tr>
         
-            <tr style="display: table-row;">
+            <tr>
                 <td style="text-align: center;" rowspan="2">6</td>
 
                 
@@ -762,7 +761,7 @@
             
 
             
-                </tr><tr style="display: table-row;">
+                </tr><tr>
                     <td><p><a href="https://doi.org/10.5281/zenodo.6543497" target="_blank">https://doi.org/10.5281/zenodo.6543497</a></p></td>
 
                     
@@ -784,7 +783,7 @@
             
             
         
-            <tr style="display: table-row;">
+            <tr>
                 <td style="text-align: center;" rowspan="1">7</td>
 
                 
@@ -795,18 +794,18 @@
 
             
                 <td style="text-align: center;">No Link Found<br>
-                    <img src="static/no_link.png" alt="Red Cross" style="width: 32px; height: 32px;"><br>
+                    <img src="/static/no_link.png" alt="Red Cross" style="width: 32px; height: 32px;"><br>
                 </td>
 
                 
                     <td style="text-align: center;">No Path Found<br>
-                        <img src="static/no_path.jpg" alt="Red Cross" style="width: 32px; height: 32px;"><br>
+                        <img src="/static/no_path.jpg" alt="Red Cross" style="width: 32px; height: 32px;"><br>
                     </td>
                 
 
                 
                     <td style="text-align: center;">Not Found<br>
-                        <img src="static/no_memory.png" alt="Red Cross" style="width: 32px; height: 32px;"><br>
+                        <img src="/static/no_memory.png" alt="Red Cross" style="width: 32px; height: 32px;"><br>
                     </td>
                 
 
@@ -817,11 +816,11 @@
             
             </tr>
         
-            <tr style="display: table-row;">
+            <tr>
                 <td style="text-align: center;" rowspan="2">8</td>
 
                 
-                    </tr><tr style="display: table-row;">
+                    </tr><tr>
                         <td><a href="https://github.com/noashin/NHGPS" target="_blank">https://github.com/noashin/NHGPS</a></td>
 
                         
@@ -852,12 +851,12 @@
 
 
     <!-- Table 4: Code Information -->
-    <h2 style="display: block;">Code Information</h2>
+    <h2 style="display: none;">Code Information</h2>
     <b>
                                         </b><b>
                                         </b><b>
                                         </b><b>
-                                        </b><table id="code-info-table" class="table-container" style="display: table;">
+                                        </b><table id="code-info-table" class="table-container" style="display: none;">
         <thead>
         <tr>
             <th><b>Serial Number</b></th>
@@ -871,7 +870,7 @@
         </thead>
         <tbody>
         
-            <tr style="display: table-row;">
+            <tr>
                 <td style="text-align: center;" rowspan="2">1</td>
 
                 
@@ -882,28 +881,28 @@
 
 
             
-                </tr><tr style="display: table-row;">
+                </tr><tr>
                     <td style="text-align: center;">Not Found<br>
-                        <img src="static/folder_not_found.png" alt="Red Cross" style="width: 32px; height: 32px;"><br>
+                        <img src="/static/folder_not_found.png" alt="Red Cross" style="width: 32px; height: 32px;"><br>
                     </td>
                     <td style="text-align: center;">File Not Found<br>
-                        <img src="static/files_not_found.png" alt="Red Cross" style="width: 32px; height: 32px;"><br>
+                        <img src="/static/files_not_found.png" alt="Red Cross" style="width: 32px; height: 32px;"><br>
                     </td>
                     <td style="text-align: center;">File Not Found<br>
-                        <img src="static/files_not_found.png" alt="Red Cross" style="width: 32px; height: 32px;"><br>
+                        <img src="/static/files_not_found.png" alt="Red Cross" style="width: 32px; height: 32px;"><br>
                     </td>
                     <td style="text-align: center;">File Not Found<br>
-                        <img src="static/files_not_found.png" alt="Red Cross" style="width: 32px; height: 32px;"><br>
+                        <img src="/static/files_not_found.png" alt="Red Cross" style="width: 32px; height: 32px;"><br>
                     </td>
                     <td style="text-align: center;">File Not Found<br>
-                        <img src="static/files_not_found.png" alt="Red Cross" style="width: 32px; height: 32px;"><br>
+                        <img src="/static/files_not_found.png" alt="Red Cross" style="width: 32px; height: 32px;"><br>
                     </td>
                     <td><p> 0 minutes 0 seconds</p></td>
                 </tr>
             
 
         
-            <tr style="display: table-row;">
+            <tr>
                 <td style="text-align: center;" rowspan="2">2</td>
 
                 
@@ -914,36 +913,36 @@
 
 
             
-                </tr><tr style="display: table-row;">
+                </tr><tr>
                     <td style="text-align: center;">Not Found<br>
-                        <img src="static/folder_not_found.png" alt="Red Cross" style="width: 32px; height: 32px;"><br>
+                        <img src="/static/folder_not_found.png" alt="Red Cross" style="width: 32px; height: 32px;"><br>
                     </td>
                     <td style="text-align: center;">File Not Found<br>
-                        <img src="static/files_not_found.png" alt="Red Cross" style="width: 32px; height: 32px;"><br>
+                        <img src="/static/files_not_found.png" alt="Red Cross" style="width: 32px; height: 32px;"><br>
                     </td>
                     <td style="text-align: center;">File Not Found<br>
-                        <img src="static/files_not_found.png" alt="Red Cross" style="width: 32px; height: 32px;"><br>
+                        <img src="/static/files_not_found.png" alt="Red Cross" style="width: 32px; height: 32px;"><br>
                     </td>
                     <td style="text-align: center;">File Not Found<br>
-                        <img src="static/files_not_found.png" alt="Red Cross" style="width: 32px; height: 32px;"><br>
+                        <img src="/static/files_not_found.png" alt="Red Cross" style="width: 32px; height: 32px;"><br>
                     </td>
                     <td style="text-align: center;">File Not Found<br>
-                        <img src="static/files_not_found.png" alt="Red Cross" style="width: 32px; height: 32px;"><br>
+                        <img src="/static/files_not_found.png" alt="Red Cross" style="width: 32px; height: 32px;"><br>
                     </td>
-                    <td><p> 0 minutes 23 seconds</p></td>
+                    <td><p> 0 minutes 22 seconds</p></td>
                 </tr>
             
 
         
-            <tr style="display: table-row;">
+            <tr>
                 <td style="text-align: center;" rowspan="4">3</td>
 
                 
-                    </tr><tr style="display: table-row;">
+                    </tr><tr>
                         <td rowspan="3" style="text-align: center;"><b>NNARS</b>
                         </td>
                         
-                            </tr><tr style="display: table-row;">
+                            </tr><tr>
                                 <td style="text-align: center;"><b> Python </b></td>
                                 <td style="text-align: center;" class="data-popup-content">
                                     <b>
@@ -976,24 +975,24 @@
                                     <b>
                                         
                                             File Not Found<br>
-                                            <img src="static/files_not_found.png" alt="Red Cross" style="width: 32px; height: 32px;"><br>
+                                            <img src="/static/files_not_found.png" alt="Red Cross" style="width: 32px; height: 32px;"><br>
                                         
                                     </b>
                                 </td>
 
                                 
                                     <td style="text-align: center;">File Not Found<br>
-                                            <img src="static/files_not_found.png" alt="Red Cross" style="width: 32px; height: 32px;"><br>
+                                            <img src="/static/files_not_found.png" alt="Red Cross" style="width: 32px; height: 32px;"><br>
                                         </td>
                                     
                                 
 
                                 
-                                    <td rowspan="2"><p><b> 0 minutes 13 seconds </b></p></td>
+                                    <td rowspan="2"><p><b> 0 minutes 10 seconds </b></p></td>
                                 
                             </tr>
                         
-                            <tr style="display: table-row;">
+                            <tr>
                                 <td style="text-align: center;"><b> Jupyter-Notebook </b></td>
                                 <td style="text-align: center;" class="data-popup-content">
                                     <b>
@@ -1049,7 +1048,7 @@ from scipy.integrate import quad
 
 ---------------------------------------------------------------------------
 ImportError                               Traceback (most recent call last)
-~\AppData\Local\Temp/ipykernel_10896/3628840999.py in &lt;module&gt;
+~\AppData\Local\Temp/ipykernel_3728/3628840999.py in &lt;module&gt;
       2 
       3 import matplotlib.pyplot as plt
 ----&gt; 4 from scipy.integrate import quad
@@ -1089,7 +1088,7 @@ ImportError: DLL load failed while importing _ufuncs: The specified module could
 
                                 
                                     <td style="text-align: center;">File Not Found<br>
-                                            <img src="static/files_not_found.png" alt="Red Cross" style="width: 32px; height: 32px;"><br>
+                                            <img src="/static/files_not_found.png" alt="Red Cross" style="width: 32px; height: 32px;"><br>
                                         </td>
                                     
                                 
@@ -1108,7 +1107,7 @@ ImportError: DLL load failed while importing _ufuncs: The specified module could
             
 
         
-            <tr style="display: table-row;">
+            <tr>
                 <td style="text-align: center;" rowspan="2">4</td>
 
                 
@@ -1119,28 +1118,28 @@ ImportError: DLL load failed while importing _ufuncs: The specified module could
 
 
             
-                </tr><tr style="display: table-row;">
+                </tr><tr>
                     
                         <td style="text-align: center;"><b>Bdd</b></td>
                     
                     <td style="text-align: center;">File Not Found<br>
-                        <img src="static/files_not_found.png" alt="Red Cross" style="width: 32px; height: 32px;"><br>
+                        <img src="/static/files_not_found.png" alt="Red Cross" style="width: 32px; height: 32px;"><br>
                     </td>
                     <td style="text-align: center;">File Not Found<br>
-                        <img src="static/files_not_found.png" alt="Red Cross" style="width: 32px; height: 32px;"><br>
+                        <img src="/static/files_not_found.png" alt="Red Cross" style="width: 32px; height: 32px;"><br>
                     </td>
                     <td style="text-align: center;">File Not Found<br>
-                        <img src="static/files_not_found.png" alt="Red Cross" style="width: 32px; height: 32px;"><br>
+                        <img src="/static/files_not_found.png" alt="Red Cross" style="width: 32px; height: 32px;"><br>
                     </td>
                     <td style="text-align: center;">File Not Found<br>
-                        <img src="static/files_not_found.png" alt="Red Cross" style="width: 32px; height: 32px;"><br>
+                        <img src="/static/files_not_found.png" alt="Red Cross" style="width: 32px; height: 32px;"><br>
                     </td>
-                    <td><p> 0 minutes 20 seconds</p></td>
+                    <td><p> 0 minutes 18 seconds</p></td>
                 </tr>
             
 
         
-            <tr style="display: table-row;">
+            <tr>
                 <td style="text-align: center;" rowspan="2">5</td>
 
                 
@@ -1151,38 +1150,38 @@ ImportError: DLL load failed while importing _ufuncs: The specified module could
 
 
             
-                </tr><tr style="display: table-row;">
+                </tr><tr>
                     <td style="text-align: center;">Not Found<br>
-                        <img src="static/folder_not_found.png" alt="Red Cross" style="width: 32px; height: 32px;"><br>
+                        <img src="/static/folder_not_found.png" alt="Red Cross" style="width: 32px; height: 32px;"><br>
                     </td>
                     <td style="text-align: center;">File Not Found<br>
-                        <img src="static/files_not_found.png" alt="Red Cross" style="width: 32px; height: 32px;"><br>
+                        <img src="/static/files_not_found.png" alt="Red Cross" style="width: 32px; height: 32px;"><br>
                     </td>
                     <td style="text-align: center;">File Not Found<br>
-                        <img src="static/files_not_found.png" alt="Red Cross" style="width: 32px; height: 32px;"><br>
+                        <img src="/static/files_not_found.png" alt="Red Cross" style="width: 32px; height: 32px;"><br>
                     </td>
                     <td style="text-align: center;">File Not Found<br>
-                        <img src="static/files_not_found.png" alt="Red Cross" style="width: 32px; height: 32px;"><br>
+                        <img src="/static/files_not_found.png" alt="Red Cross" style="width: 32px; height: 32px;"><br>
                     </td>
                     <td style="text-align: center;">File Not Found<br>
-                        <img src="static/files_not_found.png" alt="Red Cross" style="width: 32px; height: 32px;"><br>
+                        <img src="/static/files_not_found.png" alt="Red Cross" style="width: 32px; height: 32px;"><br>
                     </td>
                     <td><p> 0 minutes 47 seconds</p></td>
                 </tr>
             
 
         
-            <tr style="display: table-row;">
+            <tr>
                 <td style="text-align: center;" rowspan="3">6</td>
 
                 
 
             
-                </tr><tr style="display: table-row;">
+                </tr><tr>
                     <td rowspan="2" style="text-align: center;"><b> 6543497 </b>
                     </td>
                     
-                        </tr><tr style="display: table-row;">
+                        </tr><tr>
                             <td style="text-align: center;"><b> Jupyter-Notebook </b></td>
                             <td style="text-align: center;" class="data-popup-content">
                                 <b>
@@ -1305,7 +1304,7 @@ Name: Q11, dtype: int64
 [12, 20, 30, 18, 28]
 
 
-C:\Users\safia\AppData\Local\Temp/ipykernel_13944/1964702530.py:19: UserWarning:
+C:\Users\safia\AppData\Local\Temp/ipykernel_13212/1964702530.py:19: UserWarning:
 
 Boolean Series key will be reindexed to match DataFrame index.
 
@@ -1317,44 +1316,44 @@ Boolean Series key will be reindexed to match DataFrame index.
 
 &lt;BarContainer object of 5 artists&gt;
 
-&lt;matplotlib.collections.PathCollection at 0x1616ec4fcd0&gt;
+&lt;matplotlib.collections.PathCollection at 0x2544d765af0&gt;
 
-[&lt;matplotlib.lines.Line2D at 0x1616ec74760&gt;]
+[&lt;matplotlib.lines.Line2D at 0x2544d785670&gt;]
 
 Text(0.5, 0, 'Year of Publication')
 
 Text(0, 0.5, 'Ratios')
 
-[&lt;matplotlib.axis.YTick at 0x1616ec2f0d0&gt;,
- &lt;matplotlib.axis.YTick at 0x1616ec20910&gt;,
- &lt;matplotlib.axis.YTick at 0x1616e78a5e0&gt;,
- &lt;matplotlib.axis.YTick at 0x1616ec8a160&gt;,
- &lt;matplotlib.axis.YTick at 0x1616ec8a7f0&gt;,
- &lt;matplotlib.axis.YTick at 0x1616ec8a490&gt;]
+[&lt;matplotlib.axis.YTick at 0x2544d734ee0&gt;,
+ &lt;matplotlib.axis.YTick at 0x2544d734760&gt;,
+ &lt;matplotlib.axis.YTick at 0x2544d288d00&gt;,
+ &lt;matplotlib.axis.YTick at 0x2544d79d040&gt;,
+ &lt;matplotlib.axis.YTick at 0x2544d79d700&gt;,
+ &lt;matplotlib.axis.YTick at 0x2544d79d6a0&gt;]
 
 Text(0.5, 1.0, 'Ratios of data accessibility and reproducibility with time')
 
-&lt;matplotlib.legend.Legend at 0x1616ec74a60&gt;
+&lt;matplotlib.legend.Legend at 0x2544d741ee0&gt;
 
 (0.0, 155.0)
 
 &lt;Figure size 504x360 with 1 Axes&gt;
 
-&lt;matplotlib.collections.PathCollection at 0x1616e77de50&gt;
+&lt;matplotlib.collections.PathCollection at 0x2544d8b8460&gt;
 
-[&lt;matplotlib.lines.Line2D at 0x1616eda7a60&gt;]
+[&lt;matplotlib.lines.Line2D at 0x2544d8b89d0&gt;]
 
-&lt;matplotlib.collections.PathCollection at 0x1616eda7d90&gt;
+&lt;matplotlib.collections.PathCollection at 0x2544d8b8c40&gt;
 
-[&lt;matplotlib.lines.Line2D at 0x1616edb2250&gt;]
+[&lt;matplotlib.lines.Line2D at 0x2544d8c61f0&gt;]
 
-&lt;matplotlib.collections.PathCollection at 0x1616e78a160&gt;
+&lt;matplotlib.collections.PathCollection at 0x2544d8b8c70&gt;
 
-[&lt;matplotlib.lines.Line2D at 0x1616edb28e0&gt;]
+[&lt;matplotlib.lines.Line2D at 0x2544d8c68b0&gt;]
 
-&lt;matplotlib.collections.PathCollection at 0x1616edb2b80&gt;
+&lt;matplotlib.collections.PathCollection at 0x2544d8c6be0&gt;
 
-[&lt;matplotlib.lines.Line2D at 0x1616edc3070&gt;]
+[&lt;matplotlib.lines.Line2D at 0x2544d8d70a0&gt;]
 
 (0.0, 85.0)
 
@@ -1364,7 +1363,7 @@ Text(0.5, 0, 'Year of Publication')
 
 Text(0, 0.5, 'Ratios')
 
-&lt;matplotlib.legend.Legend at 0x1616edb2fa0&gt;
+&lt;matplotlib.legend.Legend at 0x2544d8c6f70&gt;
 
 &lt;Figure size 432x288 with 1 Axes&gt;
 
@@ -1385,19 +1384,19 @@ Text(0, 0.5, 'Ratios')
                                 <b>
                                     
                                         File Not Found<br>
-                                        <img src="static/files_not_found.png" alt="Red Cross" style="width: 32px; height: 32px;"><br>
+                                        <img src="/static/files_not_found.png" alt="Red Cross" style="width: 32px; height: 32px;"><br>
                                     
                                 </b>
                             </td>
 
                             
                                 <td style="text-align: center;">File Not Found<br>
-                                    <img src="static/files_not_found.png" alt="Red Cross" style="width: 32px; height: 32px;"><br>
+                                    <img src="/static/files_not_found.png" alt="Red Cross" style="width: 32px; height: 32px;"><br>
                                 </td>
                             
 
                             
-                                <td><p><b> 1 minute 16 seconds </b></p></td>
+                                <td><p><b> 0 minutes 58 seconds </b></p></td>
                             
                         </tr>
                     
@@ -1410,7 +1409,7 @@ Text(0, 0.5, 'Ratios')
             
 
         
-            <tr style="display: table-row;">
+            <tr>
                 <td style="text-align: center;" rowspan="2">7</td>
 
                 
@@ -1421,36 +1420,36 @@ Text(0, 0.5, 'Ratios')
 
 
             
-                </tr><tr style="display: table-row;">
+                </tr><tr>
                     <td style="text-align: center;">Not Found<br>
-                        <img src="static/folder_not_found.png" alt="Red Cross" style="width: 32px; height: 32px;"><br>
+                        <img src="/static/folder_not_found.png" alt="Red Cross" style="width: 32px; height: 32px;"><br>
                     </td>
                     <td style="text-align: center;">File Not Found<br>
-                        <img src="static/files_not_found.png" alt="Red Cross" style="width: 32px; height: 32px;"><br>
+                        <img src="/static/files_not_found.png" alt="Red Cross" style="width: 32px; height: 32px;"><br>
                     </td>
                     <td style="text-align: center;">File Not Found<br>
-                        <img src="static/files_not_found.png" alt="Red Cross" style="width: 32px; height: 32px;"><br>
+                        <img src="/static/files_not_found.png" alt="Red Cross" style="width: 32px; height: 32px;"><br>
                     </td>
                     <td style="text-align: center;">File Not Found<br>
-                        <img src="static/files_not_found.png" alt="Red Cross" style="width: 32px; height: 32px;"><br>
+                        <img src="/static/files_not_found.png" alt="Red Cross" style="width: 32px; height: 32px;"><br>
                     </td>
                     <td style="text-align: center;">File Not Found<br>
-                        <img src="static/files_not_found.png" alt="Red Cross" style="width: 32px; height: 32px;"><br>
+                        <img src="/static/files_not_found.png" alt="Red Cross" style="width: 32px; height: 32px;"><br>
                     </td>
-                    <td><p> 0 minutes 22 seconds</p></td>
+                    <td><p> 0 minutes 21 seconds</p></td>
                 </tr>
             
 
         
-            <tr style="display: table-row;">
+            <tr>
                 <td style="text-align: center;" rowspan="4">8</td>
 
                 
-                    </tr><tr style="display: table-row;">
+                    </tr><tr>
                         <td rowspan="3" style="text-align: center;"><b>NHGPS</b>
                         </td>
                         
-                            </tr><tr style="display: table-row;">
+                            </tr><tr>
                                 <td style="text-align: center;"><b> Python </b></td>
                                 <td style="text-align: center;" class="data-popup-content">
                                     <b>
@@ -1660,17 +1659,17 @@ ImportError: DLL load failed while importing _ufuncs: The specified module could
 
                                 
                                     <td style="text-align: center;">File Not Found<br>
-                                            <img src="static/files_not_found.png" alt="Red Cross" style="width: 32px; height: 32px;"><br>
+                                            <img src="/static/files_not_found.png" alt="Red Cross" style="width: 32px; height: 32px;"><br>
                                         </td>
                                     
                                 
 
                                 
-                                    <td rowspan="2"><p><b> 3 minutes 44 seconds </b></p></td>
+                                    <td rowspan="2"><p><b> 2 minutes 36 seconds </b></p></td>
                                 
                             </tr>
                         
-                            <tr style="display: table-row;">
+                            <tr>
                                 <td style="text-align: center;"><b> Jupyter-Notebook </b></td>
                                 <td style="text-align: center;" class="data-popup-content">
                                     <b>
@@ -1723,13 +1722,13 @@ ImportError: DLL load failed while importing _ufuncs: The specified module could
 
 [5 rows x 24 columns]
 
-C:\Users\safia\AppData\Local\Temp/ipykernel_4236/3685371541.py:2: SettingWithCopyWarning: 
+C:\Users\safia\AppData\Local\Temp/ipykernel_8844/3685371541.py:2: SettingWithCopyWarning: 
 A value is trying to be set on a copy of a slice from a DataFrame.
 Try using .loc[row_indexer,col_indexer] = value instead
 
 See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
   train_df['clean_date'] = pd.to_datetime(train_df['CMPLNT_FR_DT'])
-C:\Users\safia\AppData\Local\Temp/ipykernel_4236/3685371541.py:3: SettingWithCopyWarning: 
+C:\Users\safia\AppData\Local\Temp/ipykernel_8844/3685371541.py:3: SettingWithCopyWarning: 
 A value is trying to be set on a copy of a slice from a DataFrame.
 Try using .loc[row_indexer,col_indexer] = value instead
 
@@ -1737,7 +1736,7 @@ See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stab
   test_df['clean_date'] = pd.to_datetime(test_df['CMPLNT_FR_DT'])
 
 
-C:\Users\safia\AppData\Local\Temp/ipykernel_4236/1044948817.py:8: FutureWarning: The pandas.datetime class is deprecated and will be removed from pandas in a future version. Import from datetime module instead.
+C:\Users\safia\AppData\Local\Temp/ipykernel_8844/1044948817.py:8: FutureWarning: The pandas.datetime class is deprecated and will be removed from pandas in a future version. Import from datetime module instead.
   date = pd.datetime.combine(df.iloc[i, -1], df.iloc[i, 2])
 
 
@@ -1773,7 +1772,7 @@ array(['Strathcona', 'Kerrisdale', 'Dunbar-Southlands',
        'Mount Pleasant', 'Kitsilano', 'Stanley Park', 'South Cambie',
        'Marpole', 'Oakridge'], dtype=object)
 
-C:\Users\safia\AppData\Local\Temp/ipykernel_13380/2343883949.py:1: UserWarning: Boolean Series key will be reindexed to match DataFrame index.
+C:\Users\safia\AppData\Local\Temp/ipykernel_4552/2343883949.py:1: UserWarning: Boolean Series key will be reindexed to match DataFrame index.
   sub_df = df[df['NEIGHBOURHOOD'] == 'Central Business District'][df['TYPE'] == 'Other Theft']
 
 
@@ -1861,7 +1860,7 @@ events_d = np.round(events_d, 3)
 
 ---------------------------------------------------------------------------
 TypeError                                 Traceback (most recent call last)
-~\AppData\Local\Temp/ipykernel_13380/3406154553.py in &lt;module&gt;
+~\AppData\Local\Temp/ipykernel_4552/3406154553.py in &lt;module&gt;
       1 sub_df['date'] = pd.to_datetime(sub_df[['YEAR', 'MONTH', 'DAY', 'HOUR', 'MINUTE']])
 ----&gt; 2 events = sub_df['date'].astype(int).to_numpy()
       3 events -= events[0]
@@ -1930,7 +1929,7 @@ import yaml
 
 ---------------------------------------------------------------------------
 ImportError                               Traceback (most recent call last)
-~\AppData\Local\Temp/ipykernel_5980/1480864184.py in &lt;module&gt;
+~\AppData\Local\Temp/ipykernel_12308/1480864184.py in &lt;module&gt;
       7 
       8 import numpy as np
 ----&gt; 9 import scipy.stats as st
@@ -2023,7 +2022,7 @@ from src.variational_inference import VI
 
 ---------------------------------------------------------------------------
 ImportError                               Traceback (most recent call last)
-~\AppData\Local\Temp/ipykernel_10764/4053218539.py in &lt;module&gt;
+~\AppData\Local\Temp/ipykernel_14108/4053218539.py in &lt;module&gt;
      10 
      11 sys.path.append('../')
 ---&gt; 12 from src.hawkes_object import NHGPS
@@ -2088,7 +2087,7 @@ import yaml
 
 ---------------------------------------------------------------------------
 ImportError                               Traceback (most recent call last)
-~\AppData\Local\Temp/ipykernel_14780/3237565285.py in &lt;module&gt;
+~\AppData\Local\Temp/ipykernel_9676/3237565285.py in &lt;module&gt;
       7 import numpy as np
       8 import matplotlib.pyplot as plt
 ----&gt; 9 from scipy.stats import probplot
@@ -2184,7 +2183,7 @@ import yaml
 
 ---------------------------------------------------------------------------
 ImportError                               Traceback (most recent call last)
-~\AppData\Local\Temp/ipykernel_14536/444347891.py in &lt;module&gt;
+~\AppData\Local\Temp/ipykernel_12900/444347891.py in &lt;module&gt;
       7 
       8 import numpy as np
 ----&gt; 9 import scipy.stats as st
@@ -2271,7 +2270,7 @@ ImportError: DLL load failed while importing _iterative: The specified module co
 
                                 
                                     <td style="text-align: center;">File Not Found<br>
-                                            <img src="static/files_not_found.png" alt="Red Cross" style="width: 32px; height: 32px;"><br>
+                                            <img src="/static/files_not_found.png" alt="Red Cross" style="width: 32px; height: 32px;"><br>
                                         </td>
                                     
                                 
@@ -2416,6 +2415,7 @@ ImportError: DLL load failed while importing _iterative: The specified module co
         }
     </script>
 </div>
+
 
 <script>
     // Function to toggle the visibility of Table 2, Table 3 and Table 4 based on the selected option
