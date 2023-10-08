@@ -428,6 +428,6 @@ p {
     right: 10px;
     color: #fe0606;
     text-decoration: none;
-    font-size: 50px;
+    font-size: 100px;
     cursor: pointer; /* Add a pointer cursor to indicate it's clickable */
 }
