@@ -30,6 +30,20 @@
 
     <!-- Table 1: File Information -->
     <h2>General Information</h2>
+    <details>
+      <summary style="font-size: 20px;">
+        <span class="icon">👇</span>
+        <b>Click here to see details</b>
+      </summary>
+      <pre style="background: #FFFFF7; color: black; padding:20px; font-size: 16px;">
+    Overview result of the selected paper.
+        1. Column "Paper Title" represent the title of that paper.
+        2. Column "File Path" indicates where the selected file is situated. 
+        3. Column "Data Accessibility", ✔ means means data are accessible and  ✘ means data are not accessible.
+        4. Column "Data Availability",  ✔ means data are available and  ✘ means data are not available. 
+      </pre>
+    </details>
+    
     <div class="table-scroll-container">
         <table id="file-info-table" class="table-container">
             <thead>
@@ -237,6 +251,20 @@
 
     <!-- Table 2: Link Information -->
     <h2 style="display: none;">Link Information</h2>
+
+    <details style="display: none;">
+      <summary style="font-size: 20px;">
+        <span class="icon">👇</span>
+        <b>Click here to see details</b>
+      </summary>
+      <pre style="background: #FFFFF7; color: black; padding:20px; font-size: 16px;">
+    The output of the Data Accessibility. 
+        1. Column "URL" represents all the URLs (limited to GitHub, Zenodo, and OSF) of the paper.
+        2. Column "Source" represents the actual Source of the code. (limited to GitHub, Zenodo, and OSF)
+        3. Column "Data Accessibility", ✔ means data are accessible and ✘ means data are not accessible. 
+      </pre>
+    </details>
+
     <table id="link-info-table" class="table-container" style="display: none;">
         <thead>
         <tr>
@@ -251,14 +279,6 @@
             <tr>
                 <td style="text-align: center;" rowspan="1">1</td>
 
-                
-
-            
-
-            
-
-
-            
                 <td>No URL Found<br></td>
 
                 <td style="text-align: center;"><p>✘</p></td>
@@ -701,6 +721,23 @@
 
     <!-- Table 3: Download Information -->
     <h2 style="display: none;">Download Information</h2>
+
+    <details style="display: none;">
+      <summary style="font-size: 20px;">
+        <span class="icon">👇</span>
+        <b>Click here to see details</b>
+      </summary>
+      <pre style="background: #FFFFF7; color: black; padding:20px; font-size: 16px;">
+    The output of the Data Availability. 
+        1. Column "Downloadable Link" represents the actual link that hold the data, or/and codes.
+        2. Column "Download Path" represents the folder path where the code or/and data are download.
+        3. Column "Folder Size" represents the total size of that particular folder.
+        4. Column "Available Files" represents which files (Python, RStudio, MATLAB, or Jupyter Notebooks) are available. 
+        5. Column "Data Availability", ✔ means data are available and  ✘ means data are not available. 
+        6. Column "Time" means how much time it took to complete the process.  
+      </pre>
+    </details>
+
     <table id="download-info-table" class="table-container" style="display: none;">
         <thead>
         <tr>
@@ -716,13 +753,6 @@
             <tr>
                 <td style="text-align: center;" rowspan="1">1</td>
 
-                
-
-            
-
-            
-
-            
                 <td style="text-align: center;">No Link Found<br>
                     <img src="static/no_link.png" alt="Red Cross" style="width: 32px; height: 32px;"><br>
                 </td>
@@ -1004,14 +1034,9 @@
 
                     
                         <td style="text-align: center;"><p>✔ </p> <!-- Checkmark symbol ✓ -->
-                        </td>
-                    
+                        </td>             
 
                 </tr>
-            
-
-            
-            
         
             <tr>
                 <td style="text-align: center;" rowspan="2">10</td>
@@ -1020,28 +1045,14 @@
                     </tr><tr>
                         <td><a href="https://github.com/noashin/NHGPS" target="_blank">https://github.com/noashin/NHGPS</a></td>
 
-                        
                             <td>C:\Users\safia\Documents\multifileupload\Download\Variational Bayesian Inference for\NHGPS</td>
-                        
-
                         
                             <td style="text-align: center;">274.332 MB</td>
                         
-
-                        
                             <td style="text-align: center;"><p>✔ </p> <!-- Checkmark symbol ✓ -->
-                            </td>
-                        
+                            </td>                
 
-                    </tr>
-                
-
-            
-
-            
-
-            
-            
+                    </tr>  
         
         </tbody>
     </table>
@@ -1049,6 +1060,21 @@
 
     <!-- Table 4: Code Information -->
     <h2 style="display: none;">Code Information</h2>
+
+    <details style="display: none;">
+      <summary style="font-size: 20px;">
+        <span class="icon">👇</span>
+        <b>Click here to see details</b>
+      </summary>
+      <pre style="background: #FFFFF7; color: black; padding:20px; font-size: 16px;">
+    Overall Platform for Automated Reproducibility Investigations of Scientific Publications. 
+        1. "File Information" - Selected files details.
+        2. "Link Information" - Data Accessibility information.
+        3. "Download Information" - Data Availability Information.
+        4. "Download Report" (button) - Download the three tables into three separate CSV files. 
+      </pre>
+    </details>
+
     <table id="code-info-table" class="table-container" style="display: none;">
         <thead>
         <tr>
@@ -1198,7 +1224,7 @@
                                         <div style="text-align: center;">
                                             <a href="#C:\Users\safia\Documents\multifileupload\Download\A minimax near-optimal algorithm\NNARS\requirements_new.txt">
                                                 <strong>Generated</strong><br>
-                                                <img src="static/present.jpg" alt="presnt" style="width: 32px; height: 32px;">
+                                                <img src="static/generated_2.jpg" alt="presnt" style="width: 52px; height: 52px;">
                                             </a>
                                         </div>
                                         <div id="C:\Users\safia\Documents\multifileupload\Download\A minimax near-optimal algorithm\NNARS\requirements_new.txt" class="modal">
@@ -2058,7 +2084,7 @@ ModuleNotFoundError: No module named 'scenewalk'
                                     <div style="text-align: center;">
                                         <a href="#C:\Users\safia\Documents\multifileupload\Download\Modeling the effects of\qsx4w\requirements_new.txt">
                                             <strong>Generated</strong><br>
-                                            <img src="static/present.jpg" alt="presnt" style="width: 32px; height: 32px;">
+                                            <img src="static/generated_2.jpg" alt="presnt" style="width: 52px; height: 52px;">
                                         </a>
                                     </div>
                                     <div id="C:\Users\safia\Documents\multifileupload\Download\Modeling the effects of\qsx4w\requirements_new.txt" class="modal">
@@ -3802,7 +3828,7 @@ ModuleNotFoundError: No module named 'amici'
                                     <div style="text-align: center;">
                                         <a href="#C:\Users\safia\Documents\multifileupload\Download\Reinforcement learning and Bayesian\3967011\requirements_new.txt">
                                             <strong>Generated</strong><br>
-                                            <img src="static/present.jpg" alt="presnt" style="width: 32px; height: 32px;">
+                                            <img src="static/generated_2.jpg" alt="presnt" style="width: 52px; height: 52px;">
                                         </a>
                                     </div>
                                     <div id="C:\Users\safia\Documents\multifileupload\Download\Reinforcement learning and Bayesian\3967011\requirements_new.txt" class="modal">
@@ -7349,7 +7375,7 @@ ImportError: DLL load failed while importing _iterative: The specified module co
                                         <div style="text-align: center;">
                                             <a href="#C:\Users\safia\Documents\multifileupload\Download\Variational Bayesian Inference for\NHGPS\requirements_new.txt">
                                                 <strong>Generated</strong><br>
-                                                <img src="static/present.jpg" alt="presnt" style="width: 32px; height: 32px;">
+                                                <img src="static/generated_2.jpg" alt="presnt" style="width: 52px; height: 52px;">
                                             </a>
                                         </div>
                                         <div id="C:\Users\safia\Documents\multifileupload\Download\Variational Bayesian Inference for\NHGPS\requirements_new.txt" class="modal">
@@ -7788,6 +7814,18 @@ ImportError: DLL load failed while importing _ufuncs: The specified module could
         // If a table other than "All" is selected, show the corresponding table and its heading
         if (selectedTable) {
             headings.forEach(function (heading) {
+                heading.style.display = 'block';
+            });
+        }
+
+        var headings_1 = document.querySelectorAll('details');
+        headings_1.forEach(function (heading) {
+            heading.style.display = 'none';
+        });
+
+        // If a table other than "All" is selected, show the corresponding table and its heading
+        if (selectedTable) {
+            headings_1.forEach(function (heading) {
                 heading.style.display = 'block';
             });
         }
